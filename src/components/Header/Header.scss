@@ -1,0 +1,112 @@
+$primary-color: #162162;
+$font: normal normal normal 16px/22px Nunito;
+$line-height: 1.8em;
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font: $font;
+}
+
+img.logo {
+  max-height: 100%;
+  height: 100%;
+  width: auto;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  line-height: $line-height;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 1rem;
+  color: $primary-color;
+  border-bottom: 2px solid transparent;
+  letter-spacing: 0px;
+
+  &:hover,
+  &:active {
+    border-bottom: 2px solid #3f8cd1;
+  }
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+Button.beratung {
+  color: $primary-color;
+  padding: 0 0.8em;
+  border-radius: 5px;
+  border: 2px solid $primary-color;
+  & span {
+    line-height: $line-height !important;
+    font: $font;
+  }
+}
+
+@media (max-width: 1075px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: inline-block;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  Button.beratung {
+    display: none;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}

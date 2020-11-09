@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+//Components
+import { Header } from "./components";
+import { Layout, Menu } from "antd";
+// Styles
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout className="layout bg-white">
+        <Layout.Header className="bg-transparent h-full bg-white py-2">
+          <Header />
+        </Layout.Header>
+        <Layout.Content>
+          <div className="site-layout-content">Content</div>
+        </Layout.Content>
+        <Layout.Footer style={{ textAlign: "center" }}>
+          Ant Design ©2018 Created by Ant UED
+        </Layout.Footer>
+      </Layout>
+    </>
   );
 }
 
