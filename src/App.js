@@ -1,9 +1,9 @@
 import React from "react";
 
 //Components
-import { Header } from "./components";
+import { Header } from "./Components";
 import { Layout, Menu } from "antd";
-import { AppSwiper } from "./components";
+import { Home } from "./Pages";
 // Styles
 import "./App.scss";
 
@@ -18,7 +18,7 @@ function App() {
             </Layout.Header>
             <Layout.Content>
               <div className="site-layout-content">
-                <AppSwiper />
+                <Home />
               </div>
             </Layout.Content>
             <Layout.Footer style={{ textAlign: "center" }}>

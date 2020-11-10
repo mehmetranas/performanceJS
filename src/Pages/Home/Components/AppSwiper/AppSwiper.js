@@ -3,7 +3,7 @@ import Swiper from "react-id-swiper";
 // Styles
 import styles from "./AppSwiper.module.scss";
 // Images
-import image1 from "../../Images/SliderImage1.png";
+import image1 from "../../../../Images/SliderImage1.png";
 
 const AppSwiper = () => {
   const params = {
