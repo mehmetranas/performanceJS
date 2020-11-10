@@ -5,6 +5,7 @@ import {
   AppSwiper,
   SectionBeratungText,
   SectionBeratungSelects,
+  SectionBeratungInputs,
 } from "./Components";
 
 // Select
@@ -14,18 +15,14 @@ function Home() {
   return (
     <>
       <AppSwiper />
-      <div className="container grid grid-cols-12">
-        <div className="sectionBeratungsText col-span-4">
+      <div className="container grid grid-cols-10">
+        <div className="sectionBeratungsText col-span-3 py-3">
           <SectionBeratungText />
         </div>
-        <div className="selectBox col-span-6">
+        <div className="selectBox col-span-7">
           <div className="grid grid-rows-2 items-center h-full">
-            <div className={styles.shadowBox}>
-              <SectionBeratungSelects />
-            </div>
-            <div className={styles.shadowBox}>
-              <SectionBeratungSelects />
-            </div>
+            <SectionBeratungSelects />
+            <SectionBeratungInputs />
           </div>
         </div>
       </div>

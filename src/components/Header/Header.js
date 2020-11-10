@@ -13,7 +13,7 @@ import logo from "../../logo.svg";
 function Header() {
   return (
     <>
-      <nav className="navbar w-4/5">
+      <nav className="navbar w-full">
         <img src={logo} className="logo" />
         <Button
           type="link"

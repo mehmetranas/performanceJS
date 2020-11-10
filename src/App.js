@@ -10,17 +10,17 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="w-4/5">
+      <div className="grid grid-cols-12">
+        <div className="col-span-10 col-start-2">
           <Layout className="layout bg-white">
-            <Layout.Header className="bg-transparent fixed bg-white py-2 w-full left-0 z-50 flex justify-center px-0">
+            <Layout.Header
+              className="bg-transparent sticky bg-white py-2 w-full left-0 z-50 top-0 flex justify-center px-0"
+              style={{ height: "120px" }}
+            >
               <Header />
             </Layout.Header>
             <Layout.Content>
-              <div
-                className="site-layout-content"
-                style={{ paddingTop: "64px" }}
-              >
+              <div className="site-layout-content">
                 <Home />
               </div>
             </Layout.Content>
