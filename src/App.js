@@ -13,11 +13,14 @@ function App() {
       <div className="flex justify-center">
         <div className="w-4/5">
           <Layout className="layout bg-white">
-            <Layout.Header className="bg-transparent h-full bg-white py-2">
+            <Layout.Header className="bg-transparent fixed bg-white py-2 w-full left-0 z-50 flex justify-center px-0">
               <Header />
             </Layout.Header>
             <Layout.Content>
-              <div className="site-layout-content">
+              <div
+                className="site-layout-content"
+                style={{ paddingTop: "64px" }}
+              >
                 <Home />
               </div>
             </Layout.Content>
