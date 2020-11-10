@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 
 // Styles
+
 import "./index.scss";
 import App from "./App";
 

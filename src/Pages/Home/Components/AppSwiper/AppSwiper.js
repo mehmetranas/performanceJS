@@ -1,5 +1,6 @@
 import React from "react";
-import Swiper from "react-id-swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 // Styles
 import styles from "./AppSwiper.module.scss";
 // Images
@@ -17,24 +18,26 @@ const AppSwiper = () => {
 
   return (
     <div className={"w-full my-6"}>
-      <Swiper {...params}>
-        <div className={"relative"}>
-          <div className={styles.heroBackground}>
-            <p className={styles.heroTitle}>
-              Zahn-
-              <br /> <strong>Bleaching</strong>
-            </p>
+      <Swiper navigation>
+        <SwiperSlide>
+          <div className={"relative"}>
+            <div className={styles.heroBackground}>
+              <p className={styles.heroTitle}>
+                Zahn-
+                <br /> <strong>Bleaching</strong>
+              </p>
+            </div>
+            <img src={image1} alt={"Dent"} className={styles.sliderImage} />
+            <div className={styles.heroText}>
+              <p>
+                Wenn unschöne Zahnverfärbungen das eigene ästhetische Empfinden
+                trüben, kann ein Bleaching Abhilfe schaffen. Dabei können Sie
+                einzelne Zähne, aber auch das ganze Gebiss bleichen lassen –
+                ganz nach Bedarf.
+              </p>
+            </div>
           </div>
-          <img src={image1} alt={"Dent"} className={styles.sliderImage} />
-          <div className={styles.heroText}>
-            <p>
-              Wenn unschöne Zahnverfärbungen das eigene ästhetische Empfinden
-              trüben, kann ein Bleaching Abhilfe schaffen. Dabei können Sie
-              einzelne Zähne, aber auch das ganze Gebiss bleichen lassen – ganz
-              nach Bedarf.
-            </p>
-          </div>
-        </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
