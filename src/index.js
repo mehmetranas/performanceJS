@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 // Styles
 
 import "./index.scss";
+import "./styles/main.scss";
 import App from "./App";
 
 ReactDOM.render(

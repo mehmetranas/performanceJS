@@ -5,3 +5,5 @@ export { default as SmallSlider } from "./SmallSlider/SmallSlider";
 export { default as EventsSlider } from "./EventsSlider/EventsSlider";
 export { default as StaffSlider } from "./StaffSlider/StaffSlider";
 export { default as StaffSliderItem } from "./StaffSliderItem/StaffSliderItem";
+export { default as LocationMap } from "./LocationMap/LocationMap";
+export { default as CliniquesLocationMap } from "./CliniquesLocationMap/CliniquesLocationMap";

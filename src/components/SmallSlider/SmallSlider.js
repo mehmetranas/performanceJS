@@ -47,19 +47,10 @@ function SmallSlider({ items }) {
         />
         <div className={"w-4/5 my-6 py-5 px-4 overflow-hidden"}>
           <StyledSwiper {...swiperParams}>
-            {items && items.map((item) => <SwiperSlide>{item}</SwiperSlide>)}
-            {/* <SwiperSlide>
-              <UnsereBehandlungenItem image={dentBleaching} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <UnsereBehandlungenItem image={dentImplantate} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <UnsereBehandlungenItem image={dentOrthaopediatate} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <UnsereBehandlungenItem image={dentBehandlung} />
-            </SwiperSlide> */}
+            {items &&
+              items.map((item, index) => (
+                <SwiperSlide key={index}>{item}</SwiperSlide>
+              ))}
           </StyledSwiper>
         </div>
         <Button

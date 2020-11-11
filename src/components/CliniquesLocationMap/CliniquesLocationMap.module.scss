@@ -1,0 +1,22 @@
+@import "./src/DesignVariables/DesignVariables.scss";
+
+.town {
+  text-align: center;
+  font: normal normal bold 1.6em/1em Nunito;
+  letter-spacing: 0px;
+  color: $primary-dark-color;
+  opacity: 1;
+}
+
+.description {
+  text-align: center;
+  font: normal normal normal 1em/1em Nunito;
+  letter-spacing: 0px;
+  color: $primary-color;
+  opacity: 1;
+  border-color: $primary-color;
+}
+
+.container {
+  width: fit-content;
+}
