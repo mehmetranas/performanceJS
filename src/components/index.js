@@ -10,3 +10,4 @@ export { default as CliniquesLocationMap } from "./CliniquesLocationMap/Clinique
 export { default as Footer } from "./Footer/Footer";
 export { default as SocialIcons } from "./SocialIcons/SocialIcons";
 export { default as HealthRoute } from "./HealthRoute/HealthRoute";
+export { default as LanguageSelectBox } from "./LanguageSelectBox/LanguageSelectBox";

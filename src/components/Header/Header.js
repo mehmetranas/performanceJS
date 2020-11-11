@@ -1,8 +1,9 @@
 import React from "react";
+import { Button, Select } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 
 //Components
-import { Button } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import { LanguageSelectBox } from "../../Components";
 
 // Styles
 import "./Header.scss";
@@ -48,6 +49,7 @@ function Header() {
             <Button size={"large"} className="beratung">
               Online Beratung
             </Button>
+            <LanguageSelectBox />
           </nav>
         </div>
       </div>
