@@ -9,30 +9,27 @@
   opacity: 1;
   padding: 1em;
 
-  .content {
+  .name {
     text-align: center;
-    font: normal normal normal 1em/1.3em Nunito;
-    letter-spacing: 0px;
-    color: #162162;
-    opacity: 1;
-  }
-
-  .cardTitle {
+    font: normal normal bold 1em/1em Nunito;
     letter-spacing: 0px;
     color: $primary-color;
-    opacity: 1;
+  }
+
+  .title {
+    text-align: center;
+    font: normal normal normal 0.8em/1em Nunito;
+    letter-spacing: 0px;
+    color: $primary-color;
   }
 
   &:hover {
     background-color: $primary-color;
     cursor: pointer;
     transition: all 100ms ease-in-out;
-    & .content,
-    & .cardTitle {
+    & .name,
+    & .title {
       color: #fff !important;
-    }
-    & img {
-      filter: brightness(0) invert(1);
     }
   }
 }

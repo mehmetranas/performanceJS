@@ -8,7 +8,7 @@ import {
   SectionBeratungInputs,
 } from "./Components";
 
-import { UnsereBehandlungen, UnsereBehandlungenSlider } from "../../Components";
+import { SectionTitle, EventsSlider, StaffSlider } from "../../Components";
 
 // Select
 import styles from "./Home.module.scss";
@@ -32,10 +32,22 @@ function Home() {
       {/* Section Unsere Behandlungen */}
       <div className="container grid grid-cols-10">
         <div className="col-span-4 mt-20 col-start-4">
-          <UnsereBehandlungen />
+          <SectionTitle
+            title="Unsere Behandlungen"
+            subTitle="Gesunde Zähne und ein strahlend weißes Lächeln"
+          />
         </div>
-        <div className="col-span-8 col-start-2 mt-5">
-          <UnsereBehandlungenSlider />
+        <div className="col-span-10 mt-5">
+          <EventsSlider />
+        </div>
+        <div className="col-span-4 mt-20 col-start-4">
+          <SectionTitle
+            title="Unsere Ärzte"
+            subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
+          />
+        </div>
+        <div className="col-span-10 mt-5">
+          <StaffSlider />
         </div>
       </div>
     </>
