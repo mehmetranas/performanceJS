@@ -14,6 +14,7 @@ import {
   StaffSlider,
   LocationMap,
   CliniquesLocationMap,
+  HealthRoute,
 } from "../../Components";
 
 // Select
@@ -60,10 +61,28 @@ function Home() {
         </div>
       </div>
 
+      {/* Section Health Route */}
       <div className="grid grid-cols-12">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
             <div className="col-span-4 mt-20 col-start-4">
+              <SectionTitle
+                title="Ihre Gesundheitsreise"
+                subTitle="Urlaub machen für gesündere Zähne"
+              />
+            </div>
+            <div className="col-span-10 mt-20">
+              <HealthRoute />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section Staff Slider */}
+      <div className="grid grid-cols-12 mt-32">
+        <div className="col-span-10 col-start-2">
+          <div className="grid grid-cols-10">
+            <div className="col-span-4 col-start-4">
               <SectionTitle
                 title="Unsere Ärzte"
                 subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
@@ -76,6 +95,7 @@ function Home() {
         </div>
       </div>
 
+      {/* Section Cliniques */}
       <div className="grid grid-cols-12">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
