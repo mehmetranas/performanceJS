@@ -1,0 +1,28 @@
+.title {
+  text-align: left;
+  font: normal normal bold 1.8em/1.8em Nunito;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.text {
+  text-align: left;
+  font: normal normal normal 1.2em/1.2em Nunito;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+a {
+  &:hover {
+    svg {
+      filter: brightness(0) invert(1);
+      transition: all 100ms ease-in-out;
+    }
+  }
+}

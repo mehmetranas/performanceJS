@@ -7,3 +7,5 @@ export { default as StaffSlider } from "./StaffSlider/StaffSlider";
 export { default as StaffSliderItem } from "./StaffSliderItem/StaffSliderItem";
 export { default as LocationMap } from "./LocationMap/LocationMap";
 export { default as CliniquesLocationMap } from "./CliniquesLocationMap/CliniquesLocationMap";
+export { default as Footer } from "./Footer/Footer";
+export { default as SocialIcons } from "./SocialIcons/SocialIcons";
