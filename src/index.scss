@@ -6,3 +6,8 @@
 @import "/node_modules/tailwindcss/dist/components.min.css";
 @import "/node_modules/tailwindcss/dist/utilities.min.css";
 @import "/node_modules/swiper/swiper-bundle.min.css";
+
+html,
+body {
+  font-family: Nunito;
+}

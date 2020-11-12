@@ -1,55 +1,70 @@
-import React from "react";
-import { Button, Select } from "antd";
+import React, { useRef } from "react";
+import { Button, Select, Grid } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 
 //Components
 import { LanguageSelectBox } from "../../Components";
 
 // Styles
-import "./Header.scss";
+import styles from "./Header.module.scss";
 
 // Images
 import logo from "../../logo.svg";
 
+const HeaderItems = [
+  <a href="#">Home</a>,
+  <a href="#">Über Uns</a>,
+  <a href="#">Unsere Ärzte</a>,
+  <a href="#">Behandlungen</a>,
+  <a href="#">Galerie</a>,
+  <a href="#">Kontakt</a>,
+];
+
+const OnlineBeratungButton = (props) => (
+  <Button {...props}>Online Beratung</Button>
+);
+
+const LanguageSelectButton = (props) => <LanguageSelectBox {...props} />;
+
 function Header() {
+  const screens = Grid.useBreakpoint();
+
+  const headerRef = useRef();
+
+  const toggleHeader = () => {
+    headerRef.current.style.display =
+      headerRef.current.style.display === "block" ? "none" : "block";
+  };
+
   return (
     <>
       <div className="grid-cols-12 grid w-full">
         <div className="col-span-10 col-start-2">
-          <nav className="navbar w-full">
-            <img src={logo} className="logo" />
-            <Button
-              type="link"
-              shape="circle"
-              className="toggle-button"
-              icon={<MenuOutlined />}
-            />
-            <div className="navbar-links ml-auto">
+          <nav className={`${styles.navbar} w-full`}>
+            <img src={logo} className={styles.logo} alt="Vefa Dent Logo" />
+            <div className={`${styles.navbarActionsSmallScreen} items-center`}>
+              <LanguageSelectButton size={screens.xs ? "small" : "large"} />
+              <Button
+                type="link"
+                className={`${styles.toggleButton} flex items-center justify-center bg-primary-1 text-white`}
+                onClick={toggleHeader}
+                icon={<MenuOutlined />}
+              />
+            </div>
+            <div ref={headerRef} className={`${styles.navbarLinks} ml-auto`}>
               <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Über Uns</a>
-                </li>
-                <li>
-                  <a href="#">Unsere Ärzte</a>
-                </li>
-                <li>
-                  <a href="#">Behandlungen</a>
-                </li>
-                <li>
-                  <a href="#">Galerie</a>
-                </li>
-                <li>
-                  <a href="#">Kontakt</a>
-                </li>
+                {HeaderItems.map((item) => (
+                  <li>{item}</li>
+                ))}
               </ul>
             </div>
-            <Button size={"large"} className="beratung">
-              Online Beratung
-            </Button>
-            <LanguageSelectBox />
+            <div className={`${styles.navbarActionsMediumScreen}`}>
+              <OnlineBeratungButton
+                className={styles.beratung}
+                size={screens.xs ? "small" : "large"}
+              />
+              <LanguageSelectButton size={screens.xs ? "small" : "large"} />
+            </div>
           </nav>
         </div>
       </div>

@@ -1,5 +1,5 @@
-$primary-color: #162162;
-$font: normal normal normal 16px/22px Nunito;
+@import "../../DesignVariables/DesignVariables.scss";
+$font: normal normal normal 1em/1em Nunito;
 $line-height: 1.8em;
 
 .navbar {
@@ -12,35 +12,36 @@ $line-height: 1.8em;
 }
 
 img.logo {
-  max-height: 100%;
-  height: 100%;
-  width: auto;
+  // max-height: 100%;
+  height: auto;
+  // width: auto;
+  width: calc(3em + 90 * ((100vw - 320px) / 1580));
 }
 
-.brand-title {
+.brandTitle {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
 
-.navbar-links {
+.navbarLinks {
   line-height: $line-height;
 }
 
-.navbar-links ul {
+.navbarLinks ul {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navbar-links li {
+.navbarLinks li {
   list-style: none;
 }
 
-.navbar-links li a {
+.navbarLinks li a {
   display: block;
   text-decoration: none;
   margin: 0 1rem;
-  color: $primary-color;
+  color: $primary-color-1;
   border-bottom: 2px solid transparent;
   letter-spacing: 0px;
 
@@ -50,14 +51,14 @@ img.logo {
   }
 }
 
-.toggle-button {
+.navbarActionsSmallScreen {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
   display: none;
 }
 
-.toggle-button .bar {
+.toggleButton .bar {
   height: 3px;
   width: 100%;
   background-color: white;
@@ -70,46 +71,61 @@ Button.beratung {
   border-radius: 5px;
   border: 2px solid $primary-color;
   & span {
-    line-height: $line-height !important;
     font: $font;
   }
 }
 
-Select.language-select {
+.navbarActionsMediumScreen {
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 1200px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .toggle-button {
-    display: inline-block;
+  .navbarActionsSmallScreen {
+    display: flex;
+    gap: 0.25em;
   }
 
-  .navbar-links {
+  .navbarActionsSmallScreen .toggleButton {
+    color: #fff;
+  }
+
+  .navbarActionsMediumScreen {
+    display: none;
+  }
+
+  .navbarLinks {
     display: none;
     width: 100%;
-  }
-  Button.beratung {
-    display: none;
+    background-color: #fff;
+    color: $primary-color-1;
   }
 
-  .navbar-links ul {
+  .navbarLinks ul {
     width: 100%;
     flex-direction: column;
+    padding: 2em 0;
   }
 
-  .navbar-links ul li {
+  .navbarLinks ul li {
     text-align: center;
   }
 
-  .navbar-links ul li a {
+  .navbarLinks ul li a {
     padding: 0.5rem 1rem;
+    &:hover,
+    &:active {
+      color: $primary-color-1 !important;
+      border: none !important;
+    }
   }
 
-  .navbar-links.active {
+  .navbarLinks.active {
     display: flex;
   }
 }

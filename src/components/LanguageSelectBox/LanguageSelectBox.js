@@ -7,7 +7,7 @@ import GlobalIcon from "../../Images/Global.svg";
 function LanguageSelectBox() {
   return (
     <>
-      <div className="px-5 flex items-center">
+      <div className="md:px-5 flex items-center">
         <img src={GlobalIcon} alt="Select Your Language" />
         <Select bordered={false} defaultValue="de" size="small">
           <Select.Option value="de">DE</Select.Option>

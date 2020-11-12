@@ -1138,26 +1138,6 @@ video {
   --divide-x-reverse: 1 !important;
 }
 
-.divide-transparent > :not(template) ~ :not(template) {
-  border-color: transparent !important;
-}
-
-.divide-current > :not(template) ~ :not(template) {
-  border-color: currentColor !important;
-}
-
-.divide-black > :not(template) ~ :not(template) {
-  --divide-opacity: 1 !important;
-  border-color: #000 !important;
-  border-color: rgba(0, 0, 0, var(--divide-opacity)) !important;
-}
-
-.divide-white > :not(template) ~ :not(template) {
-  --divide-opacity: 1 !important;
-  border-color: #fff !important;
-  border-color: rgba(255, 255, 255, var(--divide-opacity)) !important;
-}
-
 .divide-primary-0 > :not(template) ~ :not(template) {
   border-color: hsla(208, 97%, 60%, 1) !important;
 }
@@ -1287,26 +1267,6 @@ video {
           background-clip: text !important;
 }
 
-.bg-transparent {
-  background-color: transparent !important;
-}
-
-.bg-current {
-  background-color: currentColor !important;
-}
-
-.bg-black {
-  --bg-opacity: 1 !important;
-  background-color: #000 !important;
-  background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-}
-
-.bg-white {
-  --bg-opacity: 1 !important;
-  background-color: #fff !important;
-  background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-}
-
 .bg-primary-0 {
   background-color: hsla(208, 97%, 60%, 1) !important;
 }
@@ -1315,52 +1275,12 @@ video {
   background-color: hsla(231, 63%, 24%, 1) !important;
 }
 
-.hover\:bg-transparent:hover {
-  background-color: transparent !important;
-}
-
-.hover\:bg-current:hover {
-  background-color: currentColor !important;
-}
-
-.hover\:bg-black:hover {
-  --bg-opacity: 1 !important;
-  background-color: #000 !important;
-  background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-}
-
-.hover\:bg-white:hover {
-  --bg-opacity: 1 !important;
-  background-color: #fff !important;
-  background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-}
-
 .hover\:bg-primary-0:hover {
   background-color: hsla(208, 97%, 60%, 1) !important;
 }
 
 .hover\:bg-primary-1:hover {
   background-color: hsla(231, 63%, 24%, 1) !important;
-}
-
-.focus\:bg-transparent:focus {
-  background-color: transparent !important;
-}
-
-.focus\:bg-current:focus {
-  background-color: currentColor !important;
-}
-
-.focus\:bg-black:focus {
-  --bg-opacity: 1 !important;
-  background-color: #000 !important;
-  background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-}
-
-.focus\:bg-white:focus {
-  --bg-opacity: 1 !important;
-  background-color: #fff !important;
-  background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
 }
 
 .focus\:bg-primary-0:focus {
@@ -1407,26 +1327,6 @@ video {
   background-image: linear-gradient(to top left, var(--gradient-color-stops)) !important;
 }
 
-.from-transparent {
-  --gradient-from-color: transparent !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.from-current {
-  --gradient-from-color: currentColor !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
-.from-black {
-  --gradient-from-color: #000 !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.from-white {
-  --gradient-from-color: #fff !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
 .from-primary-0 {
   --gradient-from-color: hsla(208, 97%, 60%, 1) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -1435,26 +1335,6 @@ video {
 .from-primary-1 {
   --gradient-from-color: hsla(231, 63%, 24%, 1) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-}
-
-.via-transparent {
-  --gradient-via-color: transparent !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.via-current {
-  --gradient-via-color: currentColor !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
-.via-black {
-  --gradient-via-color: #000 !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.via-white {
-  --gradient-via-color: #fff !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
 .via-primary-0 {
@@ -1467,48 +1347,12 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
 }
 
-.to-transparent {
-  --gradient-to-color: transparent !important;
-}
-
-.to-current {
-  --gradient-to-color: currentColor !important;
-}
-
-.to-black {
-  --gradient-to-color: #000 !important;
-}
-
-.to-white {
-  --gradient-to-color: #fff !important;
-}
-
 .to-primary-0 {
   --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
 }
 
 .to-primary-1 {
   --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-}
-
-.hover\:from-transparent:hover {
-  --gradient-from-color: transparent !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.hover\:from-current:hover {
-  --gradient-from-color: currentColor !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
-.hover\:from-black:hover {
-  --gradient-from-color: #000 !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.hover\:from-white:hover {
-  --gradient-from-color: #fff !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
 .hover\:from-primary-0:hover {
@@ -1521,26 +1365,6 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
 }
 
-.hover\:via-transparent:hover {
-  --gradient-via-color: transparent !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.hover\:via-current:hover {
-  --gradient-via-color: currentColor !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
-.hover\:via-black:hover {
-  --gradient-via-color: #000 !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.hover\:via-white:hover {
-  --gradient-via-color: #fff !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
 .hover\:via-primary-0:hover {
   --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -1551,48 +1375,12 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
 }
 
-.hover\:to-transparent:hover {
-  --gradient-to-color: transparent !important;
-}
-
-.hover\:to-current:hover {
-  --gradient-to-color: currentColor !important;
-}
-
-.hover\:to-black:hover {
-  --gradient-to-color: #000 !important;
-}
-
-.hover\:to-white:hover {
-  --gradient-to-color: #fff !important;
-}
-
 .hover\:to-primary-0:hover {
   --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
 }
 
 .hover\:to-primary-1:hover {
   --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-}
-
-.focus\:from-transparent:focus {
-  --gradient-from-color: transparent !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.focus\:from-current:focus {
-  --gradient-from-color: currentColor !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
-.focus\:from-black:focus {
-  --gradient-from-color: #000 !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.focus\:from-white:focus {
-  --gradient-from-color: #fff !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
 .focus\:from-primary-0:focus {
@@ -1605,26 +1393,6 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
 }
 
-.focus\:via-transparent:focus {
-  --gradient-via-color: transparent !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.focus\:via-current:focus {
-  --gradient-via-color: currentColor !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
-.focus\:via-black:focus {
-  --gradient-via-color: #000 !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-}
-
-.focus\:via-white:focus {
-  --gradient-via-color: #fff !important;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-}
-
 .focus\:via-primary-0:focus {
   --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -1633,22 +1401,6 @@ video {
 .focus\:via-primary-1:focus {
   --gradient-via-color: hsla(231, 63%, 24%, 1) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-}
-
-.focus\:to-transparent:focus {
-  --gradient-to-color: transparent !important;
-}
-
-.focus\:to-current:focus {
-  --gradient-to-color: currentColor !important;
-}
-
-.focus\:to-black:focus {
-  --gradient-to-color: #000 !important;
-}
-
-.focus\:to-white:focus {
-  --gradient-to-color: #fff !important;
 }
 
 .focus\:to-primary-0:focus {
@@ -1799,26 +1551,6 @@ video {
   border-collapse: separate !important;
 }
 
-.border-transparent {
-  border-color: transparent !important;
-}
-
-.border-current {
-  border-color: currentColor !important;
-}
-
-.border-black {
-  --border-opacity: 1 !important;
-  border-color: #000 !important;
-  border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-}
-
-.border-white {
-  --border-opacity: 1 !important;
-  border-color: #fff !important;
-  border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-}
-
 .border-primary-0 {
   border-color: hsla(208, 97%, 60%, 1) !important;
 }
@@ -1827,52 +1559,12 @@ video {
   border-color: hsla(231, 63%, 24%, 1) !important;
 }
 
-.hover\:border-transparent:hover {
-  border-color: transparent !important;
-}
-
-.hover\:border-current:hover {
-  border-color: currentColor !important;
-}
-
-.hover\:border-black:hover {
-  --border-opacity: 1 !important;
-  border-color: #000 !important;
-  border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-}
-
-.hover\:border-white:hover {
-  --border-opacity: 1 !important;
-  border-color: #fff !important;
-  border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-}
-
 .hover\:border-primary-0:hover {
   border-color: hsla(208, 97%, 60%, 1) !important;
 }
 
 .hover\:border-primary-1:hover {
   border-color: hsla(231, 63%, 24%, 1) !important;
-}
-
-.focus\:border-transparent:focus {
-  border-color: transparent !important;
-}
-
-.focus\:border-current:focus {
-  border-color: currentColor !important;
-}
-
-.focus\:border-black:focus {
-  --border-opacity: 1 !important;
-  border-color: #000 !important;
-  border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-}
-
-.focus\:border-white:focus {
-  --border-opacity: 1 !important;
-  border-color: #fff !important;
-  border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
 }
 
 .focus\:border-primary-0:focus {
@@ -5252,86 +4944,6 @@ video {
   padding-left: 1px !important;
 }
 
-.placeholder-transparent::-webkit-input-placeholder {
-  color: transparent !important;
-}
-
-.placeholder-transparent:-ms-input-placeholder {
-  color: transparent !important;
-}
-
-.placeholder-transparent::-ms-input-placeholder {
-  color: transparent !important;
-}
-
-.placeholder-transparent::placeholder {
-  color: transparent !important;
-}
-
-.placeholder-current::-webkit-input-placeholder {
-  color: currentColor !important;
-}
-
-.placeholder-current:-ms-input-placeholder {
-  color: currentColor !important;
-}
-
-.placeholder-current::-ms-input-placeholder {
-  color: currentColor !important;
-}
-
-.placeholder-current::placeholder {
-  color: currentColor !important;
-}
-
-.placeholder-black::-webkit-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-black:-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-black::-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-black::placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-white::-webkit-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-white:-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-white::-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
-.placeholder-white::placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
 .placeholder-primary-0::-webkit-input-placeholder {
   color: hsla(208, 97%, 60%, 1) !important;
 }
@@ -5362,86 +4974,6 @@ video {
 
 .placeholder-primary-1::placeholder {
   color: hsla(231, 63%, 24%, 1) !important;
-}
-
-.focus\:placeholder-transparent:focus::-webkit-input-placeholder {
-  color: transparent !important;
-}
-
-.focus\:placeholder-transparent:focus:-ms-input-placeholder {
-  color: transparent !important;
-}
-
-.focus\:placeholder-transparent:focus::-ms-input-placeholder {
-  color: transparent !important;
-}
-
-.focus\:placeholder-transparent:focus::placeholder {
-  color: transparent !important;
-}
-
-.focus\:placeholder-current:focus::-webkit-input-placeholder {
-  color: currentColor !important;
-}
-
-.focus\:placeholder-current:focus:-ms-input-placeholder {
-  color: currentColor !important;
-}
-
-.focus\:placeholder-current:focus::-ms-input-placeholder {
-  color: currentColor !important;
-}
-
-.focus\:placeholder-current:focus::placeholder {
-  color: currentColor !important;
-}
-
-.focus\:placeholder-black:focus::-webkit-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-black:focus:-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-black:focus::-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-black:focus::placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-white:focus::-webkit-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-white:focus:-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-white:focus::-ms-input-placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-}
-
-.focus\:placeholder-white:focus::placeholder {
-  --placeholder-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
 }
 
 .focus\:placeholder-primary-0:focus::-webkit-input-placeholder {
@@ -5911,26 +5443,6 @@ video {
   text-align: justify !important;
 }
 
-.text-transparent {
-  color: transparent !important;
-}
-
-.text-current {
-  color: currentColor !important;
-}
-
-.text-black {
-  --text-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--text-opacity)) !important;
-}
-
-.text-white {
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important;
-}
-
 .text-primary-0 {
   color: hsla(208, 97%, 60%, 1) !important;
 }
@@ -5939,52 +5451,12 @@ video {
   color: hsla(231, 63%, 24%, 1) !important;
 }
 
-.hover\:text-transparent:hover {
-  color: transparent !important;
-}
-
-.hover\:text-current:hover {
-  color: currentColor !important;
-}
-
-.hover\:text-black:hover {
-  --text-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--text-opacity)) !important;
-}
-
-.hover\:text-white:hover {
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important;
-}
-
 .hover\:text-primary-0:hover {
   color: hsla(208, 97%, 60%, 1) !important;
 }
 
 .hover\:text-primary-1:hover {
   color: hsla(231, 63%, 24%, 1) !important;
-}
-
-.focus\:text-transparent:focus {
-  color: transparent !important;
-}
-
-.focus\:text-current:focus {
-  color: currentColor !important;
-}
-
-.focus\:text-black:focus {
-  --text-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--text-opacity)) !important;
-}
-
-.focus\:text-white:focus {
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important;
 }
 
 .focus\:text-primary-0:focus {
@@ -10061,26 +9533,6 @@ video {
     --divide-x-reverse: 1 !important;
   }
 
-  .sm\:divide-transparent > :not(template) ~ :not(template) {
-    border-color: transparent !important;
-  }
-
-  .sm\:divide-current > :not(template) ~ :not(template) {
-    border-color: currentColor !important;
-  }
-
-  .sm\:divide-black > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--divide-opacity)) !important;
-  }
-
-  .sm\:divide-white > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--divide-opacity)) !important;
-  }
-
   .sm\:divide-primary-0 > :not(template) ~ :not(template) {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -10210,26 +9662,6 @@ video {
             background-clip: text !important;
   }
 
-  .sm\:bg-transparent {
-    background-color: transparent !important;
-  }
-
-  .sm\:bg-current {
-    background-color: currentColor !important;
-  }
-
-  .sm\:bg-black {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .sm\:bg-white {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .sm\:bg-primary-0 {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -10238,52 +9670,12 @@ video {
     background-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .sm\:hover\:bg-transparent:hover {
-    background-color: transparent !important;
-  }
-
-  .sm\:hover\:bg-current:hover {
-    background-color: currentColor !important;
-  }
-
-  .sm\:hover\:bg-black:hover {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .sm\:hover\:bg-white:hover {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .sm\:hover\:bg-primary-0:hover {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .sm\:hover\:bg-primary-1:hover {
     background-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .sm\:focus\:bg-transparent:focus {
-    background-color: transparent !important;
-  }
-
-  .sm\:focus\:bg-current:focus {
-    background-color: currentColor !important;
-  }
-
-  .sm\:focus\:bg-black:focus {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .sm\:focus\:bg-white:focus {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
   }
 
   .sm\:focus\:bg-primary-0:focus {
@@ -10330,26 +9722,6 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops)) !important;
   }
 
-  .sm\:from-transparent {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:from-current {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .sm\:from-black {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:from-white {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .sm\:from-primary-0 {
     --gradient-from-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -10358,26 +9730,6 @@ video {
   .sm\:from-primary-1 {
     --gradient-from-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .sm\:via-transparent {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:via-current {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .sm\:via-black {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:via-white {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .sm\:via-primary-0 {
@@ -10390,48 +9742,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .sm\:to-transparent {
-    --gradient-to-color: transparent !important;
-  }
-
-  .sm\:to-current {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .sm\:to-black {
-    --gradient-to-color: #000 !important;
-  }
-
-  .sm\:to-white {
-    --gradient-to-color: #fff !important;
-  }
-
   .sm\:to-primary-0 {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .sm\:to-primary-1 {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .sm\:hover\:from-transparent:hover {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:hover\:from-current:hover {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .sm\:hover\:from-black:hover {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:hover\:from-white:hover {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .sm\:hover\:from-primary-0:hover {
@@ -10444,26 +9760,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .sm\:hover\:via-transparent:hover {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:hover\:via-current:hover {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .sm\:hover\:via-black:hover {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:hover\:via-white:hover {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .sm\:hover\:via-primary-0:hover {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -10474,48 +9770,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .sm\:hover\:to-transparent:hover {
-    --gradient-to-color: transparent !important;
-  }
-
-  .sm\:hover\:to-current:hover {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .sm\:hover\:to-black:hover {
-    --gradient-to-color: #000 !important;
-  }
-
-  .sm\:hover\:to-white:hover {
-    --gradient-to-color: #fff !important;
-  }
-
   .sm\:hover\:to-primary-0:hover {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .sm\:hover\:to-primary-1:hover {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .sm\:focus\:from-transparent:focus {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:focus\:from-current:focus {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .sm\:focus\:from-black:focus {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:focus\:from-white:focus {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .sm\:focus\:from-primary-0:focus {
@@ -10528,26 +9788,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .sm\:focus\:via-transparent:focus {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:focus\:via-current:focus {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .sm\:focus\:via-black:focus {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .sm\:focus\:via-white:focus {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .sm\:focus\:via-primary-0:focus {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -10556,22 +9796,6 @@ video {
   .sm\:focus\:via-primary-1:focus {
     --gradient-via-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .sm\:focus\:to-transparent:focus {
-    --gradient-to-color: transparent !important;
-  }
-
-  .sm\:focus\:to-current:focus {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .sm\:focus\:to-black:focus {
-    --gradient-to-color: #000 !important;
-  }
-
-  .sm\:focus\:to-white:focus {
-    --gradient-to-color: #fff !important;
   }
 
   .sm\:focus\:to-primary-0:focus {
@@ -10722,26 +9946,6 @@ video {
     border-collapse: separate !important;
   }
 
-  .sm\:border-transparent {
-    border-color: transparent !important;
-  }
-
-  .sm\:border-current {
-    border-color: currentColor !important;
-  }
-
-  .sm\:border-black {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .sm\:border-white {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .sm\:border-primary-0 {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -10750,52 +9954,12 @@ video {
     border-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .sm\:hover\:border-transparent:hover {
-    border-color: transparent !important;
-  }
-
-  .sm\:hover\:border-current:hover {
-    border-color: currentColor !important;
-  }
-
-  .sm\:hover\:border-black:hover {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .sm\:hover\:border-white:hover {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .sm\:hover\:border-primary-0:hover {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .sm\:hover\:border-primary-1:hover {
     border-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .sm\:focus\:border-transparent:focus {
-    border-color: transparent !important;
-  }
-
-  .sm\:focus\:border-current:focus {
-    border-color: currentColor !important;
-  }
-
-  .sm\:focus\:border-black:focus {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .sm\:focus\:border-white:focus {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
   }
 
   .sm\:focus\:border-primary-0:focus {
@@ -14175,86 +13339,6 @@ video {
     padding-left: 1px !important;
   }
 
-  .sm\:placeholder-transparent::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:placeholder-transparent:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:placeholder-transparent::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:placeholder-transparent::placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:placeholder-current::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:placeholder-current:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:placeholder-current::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:placeholder-current::placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:placeholder-black::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-black:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-black::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-black::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-white::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-white:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-white::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:placeholder-white::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
   .sm\:placeholder-primary-0::-webkit-input-placeholder {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -14285,86 +13369,6 @@ video {
 
   .sm\:placeholder-primary-1::placeholder {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:focus\:placeholder-transparent:focus::placeholder {
-    color: transparent !important;
-  }
-
-  .sm\:focus\:placeholder-current:focus::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:focus\:placeholder-current:focus:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:focus\:placeholder-current:focus::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:focus\:placeholder-current:focus::placeholder {
-    color: currentColor !important;
-  }
-
-  .sm\:focus\:placeholder-black:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-black:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-black:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-black:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-white:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-white:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-white:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .sm\:focus\:placeholder-white:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
   }
 
   .sm\:focus\:placeholder-primary-0:focus::-webkit-input-placeholder {
@@ -14834,26 +13838,6 @@ video {
     text-align: justify !important;
   }
 
-  .sm\:text-transparent {
-    color: transparent !important;
-  }
-
-  .sm\:text-current {
-    color: currentColor !important;
-  }
-
-  .sm\:text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .sm\:text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .sm\:text-primary-0 {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -14862,52 +13846,12 @@ video {
     color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .sm\:hover\:text-transparent:hover {
-    color: transparent !important;
-  }
-
-  .sm\:hover\:text-current:hover {
-    color: currentColor !important;
-  }
-
-  .sm\:hover\:text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .sm\:hover\:text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .sm\:hover\:text-primary-0:hover {
     color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .sm\:hover\:text-primary-1:hover {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .sm\:focus\:text-transparent:focus {
-    color: transparent !important;
-  }
-
-  .sm\:focus\:text-current:focus {
-    color: currentColor !important;
-  }
-
-  .sm\:focus\:text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .sm\:focus\:text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
   }
 
   .sm\:focus\:text-primary-0:focus {
@@ -18919,26 +17863,6 @@ video {
     --divide-x-reverse: 1 !important;
   }
 
-  .md\:divide-transparent > :not(template) ~ :not(template) {
-    border-color: transparent !important;
-  }
-
-  .md\:divide-current > :not(template) ~ :not(template) {
-    border-color: currentColor !important;
-  }
-
-  .md\:divide-black > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--divide-opacity)) !important;
-  }
-
-  .md\:divide-white > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--divide-opacity)) !important;
-  }
-
   .md\:divide-primary-0 > :not(template) ~ :not(template) {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -19068,26 +17992,6 @@ video {
             background-clip: text !important;
   }
 
-  .md\:bg-transparent {
-    background-color: transparent !important;
-  }
-
-  .md\:bg-current {
-    background-color: currentColor !important;
-  }
-
-  .md\:bg-black {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .md\:bg-white {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .md\:bg-primary-0 {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -19096,52 +18000,12 @@ video {
     background-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .md\:hover\:bg-transparent:hover {
-    background-color: transparent !important;
-  }
-
-  .md\:hover\:bg-current:hover {
-    background-color: currentColor !important;
-  }
-
-  .md\:hover\:bg-black:hover {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .md\:hover\:bg-white:hover {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .md\:hover\:bg-primary-0:hover {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .md\:hover\:bg-primary-1:hover {
     background-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .md\:focus\:bg-transparent:focus {
-    background-color: transparent !important;
-  }
-
-  .md\:focus\:bg-current:focus {
-    background-color: currentColor !important;
-  }
-
-  .md\:focus\:bg-black:focus {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .md\:focus\:bg-white:focus {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
   }
 
   .md\:focus\:bg-primary-0:focus {
@@ -19188,26 +18052,6 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops)) !important;
   }
 
-  .md\:from-transparent {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:from-current {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .md\:from-black {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:from-white {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .md\:from-primary-0 {
     --gradient-from-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -19216,26 +18060,6 @@ video {
   .md\:from-primary-1 {
     --gradient-from-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .md\:via-transparent {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:via-current {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .md\:via-black {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:via-white {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .md\:via-primary-0 {
@@ -19248,48 +18072,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .md\:to-transparent {
-    --gradient-to-color: transparent !important;
-  }
-
-  .md\:to-current {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .md\:to-black {
-    --gradient-to-color: #000 !important;
-  }
-
-  .md\:to-white {
-    --gradient-to-color: #fff !important;
-  }
-
   .md\:to-primary-0 {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .md\:to-primary-1 {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .md\:hover\:from-transparent:hover {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:hover\:from-current:hover {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .md\:hover\:from-black:hover {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:hover\:from-white:hover {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .md\:hover\:from-primary-0:hover {
@@ -19302,26 +18090,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .md\:hover\:via-transparent:hover {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:hover\:via-current:hover {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .md\:hover\:via-black:hover {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:hover\:via-white:hover {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .md\:hover\:via-primary-0:hover {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -19332,48 +18100,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .md\:hover\:to-transparent:hover {
-    --gradient-to-color: transparent !important;
-  }
-
-  .md\:hover\:to-current:hover {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .md\:hover\:to-black:hover {
-    --gradient-to-color: #000 !important;
-  }
-
-  .md\:hover\:to-white:hover {
-    --gradient-to-color: #fff !important;
-  }
-
   .md\:hover\:to-primary-0:hover {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .md\:hover\:to-primary-1:hover {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .md\:focus\:from-transparent:focus {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:focus\:from-current:focus {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .md\:focus\:from-black:focus {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:focus\:from-white:focus {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .md\:focus\:from-primary-0:focus {
@@ -19386,26 +18118,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .md\:focus\:via-transparent:focus {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:focus\:via-current:focus {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .md\:focus\:via-black:focus {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .md\:focus\:via-white:focus {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .md\:focus\:via-primary-0:focus {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -19414,22 +18126,6 @@ video {
   .md\:focus\:via-primary-1:focus {
     --gradient-via-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .md\:focus\:to-transparent:focus {
-    --gradient-to-color: transparent !important;
-  }
-
-  .md\:focus\:to-current:focus {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .md\:focus\:to-black:focus {
-    --gradient-to-color: #000 !important;
-  }
-
-  .md\:focus\:to-white:focus {
-    --gradient-to-color: #fff !important;
   }
 
   .md\:focus\:to-primary-0:focus {
@@ -19580,26 +18276,6 @@ video {
     border-collapse: separate !important;
   }
 
-  .md\:border-transparent {
-    border-color: transparent !important;
-  }
-
-  .md\:border-current {
-    border-color: currentColor !important;
-  }
-
-  .md\:border-black {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .md\:border-white {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .md\:border-primary-0 {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -19608,52 +18284,12 @@ video {
     border-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .md\:hover\:border-transparent:hover {
-    border-color: transparent !important;
-  }
-
-  .md\:hover\:border-current:hover {
-    border-color: currentColor !important;
-  }
-
-  .md\:hover\:border-black:hover {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .md\:hover\:border-white:hover {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .md\:hover\:border-primary-0:hover {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .md\:hover\:border-primary-1:hover {
     border-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .md\:focus\:border-transparent:focus {
-    border-color: transparent !important;
-  }
-
-  .md\:focus\:border-current:focus {
-    border-color: currentColor !important;
-  }
-
-  .md\:focus\:border-black:focus {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .md\:focus\:border-white:focus {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
   }
 
   .md\:focus\:border-primary-0:focus {
@@ -23033,86 +21669,6 @@ video {
     padding-left: 1px !important;
   }
 
-  .md\:placeholder-transparent::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .md\:placeholder-transparent:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .md\:placeholder-transparent::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .md\:placeholder-transparent::placeholder {
-    color: transparent !important;
-  }
-
-  .md\:placeholder-current::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:placeholder-current:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:placeholder-current::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:placeholder-current::placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:placeholder-black::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-black:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-black::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-black::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-white::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-white:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-white::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:placeholder-white::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
   .md\:placeholder-primary-0::-webkit-input-placeholder {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -23143,86 +21699,6 @@ video {
 
   .md\:placeholder-primary-1::placeholder {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .md\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .md\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .md\:focus\:placeholder-transparent:focus::placeholder {
-    color: transparent !important;
-  }
-
-  .md\:focus\:placeholder-current:focus::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:focus\:placeholder-current:focus:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:focus\:placeholder-current:focus::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:focus\:placeholder-current:focus::placeholder {
-    color: currentColor !important;
-  }
-
-  .md\:focus\:placeholder-black:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-black:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-black:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-black:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-white:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-white:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-white:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .md\:focus\:placeholder-white:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
   }
 
   .md\:focus\:placeholder-primary-0:focus::-webkit-input-placeholder {
@@ -23692,26 +22168,6 @@ video {
     text-align: justify !important;
   }
 
-  .md\:text-transparent {
-    color: transparent !important;
-  }
-
-  .md\:text-current {
-    color: currentColor !important;
-  }
-
-  .md\:text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .md\:text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .md\:text-primary-0 {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -23720,52 +22176,12 @@ video {
     color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .md\:hover\:text-transparent:hover {
-    color: transparent !important;
-  }
-
-  .md\:hover\:text-current:hover {
-    color: currentColor !important;
-  }
-
-  .md\:hover\:text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .md\:hover\:text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .md\:hover\:text-primary-0:hover {
     color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .md\:hover\:text-primary-1:hover {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .md\:focus\:text-transparent:focus {
-    color: transparent !important;
-  }
-
-  .md\:focus\:text-current:focus {
-    color: currentColor !important;
-  }
-
-  .md\:focus\:text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .md\:focus\:text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
   }
 
   .md\:focus\:text-primary-0:focus {
@@ -27777,26 +26193,6 @@ video {
     --divide-x-reverse: 1 !important;
   }
 
-  .lg\:divide-transparent > :not(template) ~ :not(template) {
-    border-color: transparent !important;
-  }
-
-  .lg\:divide-current > :not(template) ~ :not(template) {
-    border-color: currentColor !important;
-  }
-
-  .lg\:divide-black > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--divide-opacity)) !important;
-  }
-
-  .lg\:divide-white > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--divide-opacity)) !important;
-  }
-
   .lg\:divide-primary-0 > :not(template) ~ :not(template) {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -27926,26 +26322,6 @@ video {
             background-clip: text !important;
   }
 
-  .lg\:bg-transparent {
-    background-color: transparent !important;
-  }
-
-  .lg\:bg-current {
-    background-color: currentColor !important;
-  }
-
-  .lg\:bg-black {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .lg\:bg-white {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .lg\:bg-primary-0 {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -27954,52 +26330,12 @@ video {
     background-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .lg\:hover\:bg-transparent:hover {
-    background-color: transparent !important;
-  }
-
-  .lg\:hover\:bg-current:hover {
-    background-color: currentColor !important;
-  }
-
-  .lg\:hover\:bg-black:hover {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .lg\:hover\:bg-white:hover {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .lg\:hover\:bg-primary-0:hover {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .lg\:hover\:bg-primary-1:hover {
     background-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .lg\:focus\:bg-transparent:focus {
-    background-color: transparent !important;
-  }
-
-  .lg\:focus\:bg-current:focus {
-    background-color: currentColor !important;
-  }
-
-  .lg\:focus\:bg-black:focus {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .lg\:focus\:bg-white:focus {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
   }
 
   .lg\:focus\:bg-primary-0:focus {
@@ -28046,26 +26382,6 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops)) !important;
   }
 
-  .lg\:from-transparent {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:from-current {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .lg\:from-black {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:from-white {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .lg\:from-primary-0 {
     --gradient-from-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -28074,26 +26390,6 @@ video {
   .lg\:from-primary-1 {
     --gradient-from-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .lg\:via-transparent {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:via-current {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .lg\:via-black {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:via-white {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .lg\:via-primary-0 {
@@ -28106,48 +26402,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .lg\:to-transparent {
-    --gradient-to-color: transparent !important;
-  }
-
-  .lg\:to-current {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .lg\:to-black {
-    --gradient-to-color: #000 !important;
-  }
-
-  .lg\:to-white {
-    --gradient-to-color: #fff !important;
-  }
-
   .lg\:to-primary-0 {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .lg\:to-primary-1 {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .lg\:hover\:from-transparent:hover {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:hover\:from-current:hover {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .lg\:hover\:from-black:hover {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:hover\:from-white:hover {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .lg\:hover\:from-primary-0:hover {
@@ -28160,26 +26420,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .lg\:hover\:via-transparent:hover {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:hover\:via-current:hover {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .lg\:hover\:via-black:hover {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:hover\:via-white:hover {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .lg\:hover\:via-primary-0:hover {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -28190,48 +26430,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .lg\:hover\:to-transparent:hover {
-    --gradient-to-color: transparent !important;
-  }
-
-  .lg\:hover\:to-current:hover {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .lg\:hover\:to-black:hover {
-    --gradient-to-color: #000 !important;
-  }
-
-  .lg\:hover\:to-white:hover {
-    --gradient-to-color: #fff !important;
-  }
-
   .lg\:hover\:to-primary-0:hover {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .lg\:hover\:to-primary-1:hover {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .lg\:focus\:from-transparent:focus {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:focus\:from-current:focus {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .lg\:focus\:from-black:focus {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:focus\:from-white:focus {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .lg\:focus\:from-primary-0:focus {
@@ -28244,26 +26448,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .lg\:focus\:via-transparent:focus {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:focus\:via-current:focus {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .lg\:focus\:via-black:focus {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .lg\:focus\:via-white:focus {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .lg\:focus\:via-primary-0:focus {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -28272,22 +26456,6 @@ video {
   .lg\:focus\:via-primary-1:focus {
     --gradient-via-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .lg\:focus\:to-transparent:focus {
-    --gradient-to-color: transparent !important;
-  }
-
-  .lg\:focus\:to-current:focus {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .lg\:focus\:to-black:focus {
-    --gradient-to-color: #000 !important;
-  }
-
-  .lg\:focus\:to-white:focus {
-    --gradient-to-color: #fff !important;
   }
 
   .lg\:focus\:to-primary-0:focus {
@@ -28438,26 +26606,6 @@ video {
     border-collapse: separate !important;
   }
 
-  .lg\:border-transparent {
-    border-color: transparent !important;
-  }
-
-  .lg\:border-current {
-    border-color: currentColor !important;
-  }
-
-  .lg\:border-black {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .lg\:border-white {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .lg\:border-primary-0 {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -28466,52 +26614,12 @@ video {
     border-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .lg\:hover\:border-transparent:hover {
-    border-color: transparent !important;
-  }
-
-  .lg\:hover\:border-current:hover {
-    border-color: currentColor !important;
-  }
-
-  .lg\:hover\:border-black:hover {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .lg\:hover\:border-white:hover {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .lg\:hover\:border-primary-0:hover {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .lg\:hover\:border-primary-1:hover {
     border-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .lg\:focus\:border-transparent:focus {
-    border-color: transparent !important;
-  }
-
-  .lg\:focus\:border-current:focus {
-    border-color: currentColor !important;
-  }
-
-  .lg\:focus\:border-black:focus {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .lg\:focus\:border-white:focus {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
   }
 
   .lg\:focus\:border-primary-0:focus {
@@ -31891,86 +29999,6 @@ video {
     padding-left: 1px !important;
   }
 
-  .lg\:placeholder-transparent::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:placeholder-transparent:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:placeholder-transparent::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:placeholder-transparent::placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:placeholder-current::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:placeholder-current:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:placeholder-current::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:placeholder-current::placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:placeholder-black::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-black:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-black::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-black::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-white::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-white:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-white::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:placeholder-white::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
   .lg\:placeholder-primary-0::-webkit-input-placeholder {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -32001,86 +30029,6 @@ video {
 
   .lg\:placeholder-primary-1::placeholder {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:focus\:placeholder-transparent:focus::placeholder {
-    color: transparent !important;
-  }
-
-  .lg\:focus\:placeholder-current:focus::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:focus\:placeholder-current:focus:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:focus\:placeholder-current:focus::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:focus\:placeholder-current:focus::placeholder {
-    color: currentColor !important;
-  }
-
-  .lg\:focus\:placeholder-black:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-black:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-black:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-black:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-white:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-white:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-white:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .lg\:focus\:placeholder-white:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
   }
 
   .lg\:focus\:placeholder-primary-0:focus::-webkit-input-placeholder {
@@ -32550,26 +30498,6 @@ video {
     text-align: justify !important;
   }
 
-  .lg\:text-transparent {
-    color: transparent !important;
-  }
-
-  .lg\:text-current {
-    color: currentColor !important;
-  }
-
-  .lg\:text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .lg\:text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .lg\:text-primary-0 {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -32578,52 +30506,12 @@ video {
     color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .lg\:hover\:text-transparent:hover {
-    color: transparent !important;
-  }
-
-  .lg\:hover\:text-current:hover {
-    color: currentColor !important;
-  }
-
-  .lg\:hover\:text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .lg\:hover\:text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .lg\:hover\:text-primary-0:hover {
     color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .lg\:hover\:text-primary-1:hover {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .lg\:focus\:text-transparent:focus {
-    color: transparent !important;
-  }
-
-  .lg\:focus\:text-current:focus {
-    color: currentColor !important;
-  }
-
-  .lg\:focus\:text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .lg\:focus\:text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
   }
 
   .lg\:focus\:text-primary-0:focus {
@@ -36635,26 +34523,6 @@ video {
     --divide-x-reverse: 1 !important;
   }
 
-  .xl\:divide-transparent > :not(template) ~ :not(template) {
-    border-color: transparent !important;
-  }
-
-  .xl\:divide-current > :not(template) ~ :not(template) {
-    border-color: currentColor !important;
-  }
-
-  .xl\:divide-black > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--divide-opacity)) !important;
-  }
-
-  .xl\:divide-white > :not(template) ~ :not(template) {
-    --divide-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--divide-opacity)) !important;
-  }
-
   .xl\:divide-primary-0 > :not(template) ~ :not(template) {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -36784,26 +34652,6 @@ video {
             background-clip: text !important;
   }
 
-  .xl\:bg-transparent {
-    background-color: transparent !important;
-  }
-
-  .xl\:bg-current {
-    background-color: currentColor !important;
-  }
-
-  .xl\:bg-black {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .xl\:bg-white {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .xl\:bg-primary-0 {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -36812,52 +34660,12 @@ video {
     background-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .xl\:hover\:bg-transparent:hover {
-    background-color: transparent !important;
-  }
-
-  .xl\:hover\:bg-current:hover {
-    background-color: currentColor !important;
-  }
-
-  .xl\:hover\:bg-black:hover {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .xl\:hover\:bg-white:hover {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
-  }
-
   .xl\:hover\:bg-primary-0:hover {
     background-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .xl\:hover\:bg-primary-1:hover {
     background-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .xl\:focus\:bg-transparent:focus {
-    background-color: transparent !important;
-  }
-
-  .xl\:focus\:bg-current:focus {
-    background-color: currentColor !important;
-  }
-
-  .xl\:focus\:bg-black:focus {
-    --bg-opacity: 1 !important;
-    background-color: #000 !important;
-    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
-  }
-
-  .xl\:focus\:bg-white:focus {
-    --bg-opacity: 1 !important;
-    background-color: #fff !important;
-    background-color: rgba(255, 255, 255, var(--bg-opacity)) !important;
   }
 
   .xl\:focus\:bg-primary-0:focus {
@@ -36904,26 +34712,6 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops)) !important;
   }
 
-  .xl\:from-transparent {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:from-current {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .xl\:from-black {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:from-white {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .xl\:from-primary-0 {
     --gradient-from-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -36932,26 +34720,6 @@ video {
   .xl\:from-primary-1 {
     --gradient-from-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .xl\:via-transparent {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:via-current {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .xl\:via-black {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:via-white {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .xl\:via-primary-0 {
@@ -36964,48 +34732,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .xl\:to-transparent {
-    --gradient-to-color: transparent !important;
-  }
-
-  .xl\:to-current {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .xl\:to-black {
-    --gradient-to-color: #000 !important;
-  }
-
-  .xl\:to-white {
-    --gradient-to-color: #fff !important;
-  }
-
   .xl\:to-primary-0 {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .xl\:to-primary-1 {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .xl\:hover\:from-transparent:hover {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:hover\:from-current:hover {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .xl\:hover\:from-black:hover {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:hover\:from-white:hover {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .xl\:hover\:from-primary-0:hover {
@@ -37018,26 +34750,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .xl\:hover\:via-transparent:hover {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:hover\:via-current:hover {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .xl\:hover\:via-black:hover {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:hover\:via-white:hover {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .xl\:hover\:via-primary-0:hover {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -37048,48 +34760,12 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .xl\:hover\:to-transparent:hover {
-    --gradient-to-color: transparent !important;
-  }
-
-  .xl\:hover\:to-current:hover {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .xl\:hover\:to-black:hover {
-    --gradient-to-color: #000 !important;
-  }
-
-  .xl\:hover\:to-white:hover {
-    --gradient-to-color: #fff !important;
-  }
-
   .xl\:hover\:to-primary-0:hover {
     --gradient-to-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .xl\:hover\:to-primary-1:hover {
     --gradient-to-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .xl\:focus\:from-transparent:focus {
-    --gradient-from-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:focus\:from-current:focus {
-    --gradient-from-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .xl\:focus\:from-black:focus {
-    --gradient-from-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:focus\:from-white:focus {
-    --gradient-from-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
   .xl\:focus\:from-primary-0:focus {
@@ -37102,26 +34778,6 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
   }
 
-  .xl\:focus\:via-transparent:focus {
-    --gradient-via-color: transparent !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:focus\:via-current:focus {
-    --gradient-via-color: currentColor !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
-  .xl\:focus\:via-black:focus {
-    --gradient-via-color: #000 !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
-  }
-
-  .xl\:focus\:via-white:focus {
-    --gradient-via-color: #fff !important;
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
-  }
-
   .xl\:focus\:via-primary-0:focus {
     --gradient-via-color: hsla(208, 97%, 60%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(54.06000000000002, 159.59600000000003, 251.93999999999997, 0)) !important;
@@ -37130,22 +34786,6 @@ video {
   .xl\:focus\:via-primary-1:focus {
     --gradient-via-color: hsla(231, 63%, 24%, 1) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(22.644000000000013, 34.21079999999996, 99.75599999999999, 0)) !important;
-  }
-
-  .xl\:focus\:to-transparent:focus {
-    --gradient-to-color: transparent !important;
-  }
-
-  .xl\:focus\:to-current:focus {
-    --gradient-to-color: currentColor !important;
-  }
-
-  .xl\:focus\:to-black:focus {
-    --gradient-to-color: #000 !important;
-  }
-
-  .xl\:focus\:to-white:focus {
-    --gradient-to-color: #fff !important;
   }
 
   .xl\:focus\:to-primary-0:focus {
@@ -37296,26 +34936,6 @@ video {
     border-collapse: separate !important;
   }
 
-  .xl\:border-transparent {
-    border-color: transparent !important;
-  }
-
-  .xl\:border-current {
-    border-color: currentColor !important;
-  }
-
-  .xl\:border-black {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .xl\:border-white {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .xl\:border-primary-0 {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -37324,52 +34944,12 @@ video {
     border-color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .xl\:hover\:border-transparent:hover {
-    border-color: transparent !important;
-  }
-
-  .xl\:hover\:border-current:hover {
-    border-color: currentColor !important;
-  }
-
-  .xl\:hover\:border-black:hover {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .xl\:hover\:border-white:hover {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  }
-
   .xl\:hover\:border-primary-0:hover {
     border-color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .xl\:hover\:border-primary-1:hover {
     border-color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .xl\:focus\:border-transparent:focus {
-    border-color: transparent !important;
-  }
-
-  .xl\:focus\:border-current:focus {
-    border-color: currentColor !important;
-  }
-
-  .xl\:focus\:border-black:focus {
-    --border-opacity: 1 !important;
-    border-color: #000 !important;
-    border-color: rgba(0, 0, 0, var(--border-opacity)) !important;
-  }
-
-  .xl\:focus\:border-white:focus {
-    --border-opacity: 1 !important;
-    border-color: #fff !important;
-    border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
   }
 
   .xl\:focus\:border-primary-0:focus {
@@ -40749,86 +38329,6 @@ video {
     padding-left: 1px !important;
   }
 
-  .xl\:placeholder-transparent::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:placeholder-transparent:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:placeholder-transparent::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:placeholder-transparent::placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:placeholder-current::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:placeholder-current:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:placeholder-current::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:placeholder-current::placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:placeholder-black::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-black:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-black::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-black::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-white::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-white:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-white::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:placeholder-white::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
   .xl\:placeholder-primary-0::-webkit-input-placeholder {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -40859,86 +38359,6 @@ video {
 
   .xl\:placeholder-primary-1::placeholder {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:focus\:placeholder-transparent:focus::placeholder {
-    color: transparent !important;
-  }
-
-  .xl\:focus\:placeholder-current:focus::-webkit-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:focus\:placeholder-current:focus:-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:focus\:placeholder-current:focus::-ms-input-placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:focus\:placeholder-current:focus::placeholder {
-    color: currentColor !important;
-  }
-
-  .xl\:focus\:placeholder-black:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-black:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-black:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-black:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-white:focus::-webkit-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-white:focus:-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-white:focus::-ms-input-placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
-  }
-
-  .xl\:focus\:placeholder-white:focus::placeholder {
-    --placeholder-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--placeholder-opacity)) !important;
   }
 
   .xl\:focus\:placeholder-primary-0:focus::-webkit-input-placeholder {
@@ -41408,26 +38828,6 @@ video {
     text-align: justify !important;
   }
 
-  .xl\:text-transparent {
-    color: transparent !important;
-  }
-
-  .xl\:text-current {
-    color: currentColor !important;
-  }
-
-  .xl\:text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .xl\:text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .xl\:text-primary-0 {
     color: hsla(208, 97%, 60%, 1) !important;
   }
@@ -41436,52 +38836,12 @@ video {
     color: hsla(231, 63%, 24%, 1) !important;
   }
 
-  .xl\:hover\:text-transparent:hover {
-    color: transparent !important;
-  }
-
-  .xl\:hover\:text-current:hover {
-    color: currentColor !important;
-  }
-
-  .xl\:hover\:text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .xl\:hover\:text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
-  }
-
   .xl\:hover\:text-primary-0:hover {
     color: hsla(208, 97%, 60%, 1) !important;
   }
 
   .xl\:hover\:text-primary-1:hover {
     color: hsla(231, 63%, 24%, 1) !important;
-  }
-
-  .xl\:focus\:text-transparent:focus {
-    color: transparent !important;
-  }
-
-  .xl\:focus\:text-current:focus {
-    color: currentColor !important;
-  }
-
-  .xl\:focus\:text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important;
-  }
-
-  .xl\:focus\:text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important;
   }
 
   .xl\:focus\:text-primary-0:focus {

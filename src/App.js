@@ -1,13 +1,16 @@
 import React from "react";
+import { Layout, Menu, Grid } from "antd";
 
 //Components
 import { Header, Footer } from "./Components";
-import { Layout, Menu } from "antd";
 import { Home } from "./Pages";
 // Styles
 import "./App.scss";
 
 function App() {
+  const screens = Grid.useBreakpoint();
+  const calculateHeaderHeightByScreenWidth = () =>
+    screens.xl ? "120px" : "60px";
   return (
     <>
       <div className="grid grid-cols-12">
@@ -17,7 +20,7 @@ function App() {
               <div className="col-span-10 col-start-2"> */}
             <Layout.Header
               className="bg-transparent sticky bg-white py-2 w-full left-0 z-50 top-0 flex justify-center px-0"
-              style={{ height: "120px" }}
+              style={{ height: calculateHeaderHeightByScreenWidth() }}
             >
               <Header />
             </Layout.Header>
