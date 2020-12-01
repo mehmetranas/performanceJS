@@ -31,19 +31,30 @@ const StyledSwiper = styled(Swiper)`
 `;
 
 const swiperParams = {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 20,
-  navigation: true,
+  navigation: false,
+  breakpoints: {
+    1400: {
+      slidesPerView: 4,
+    },
+    980: {
+      slidesPerView: 3,
+    },
+    560: {
+      slidesPerView: 2,
+    },
+  },
 };
 
 function SmallSlider({ items }) {
   return (
     <>
-      <div className="flex items-center justify-around">
+      <div className="flex items-center justify-center relative">
         <Button
           size="large"
           icon={<LeftOutlined className={styles.arrow} />}
-          className="border-none transform translate-x-10"
+          className="border-none absolute transform left-0 lg:translate-x-10 sm:translate-x-4"
         />
         <div className={"w-4/5 my-6 py-5 px-4 overflow-hidden"}>
           <StyledSwiper {...swiperParams}>
@@ -56,7 +67,7 @@ function SmallSlider({ items }) {
         <Button
           size="large"
           icon={<RightOutlined className={styles.arrow} />}
-          className="border-none transform -translate-x-10"
+          className="border-none absolute right-0 transform lg:-translate-x-10 sm:-translate-x-4"
         />
       </div>
     </>

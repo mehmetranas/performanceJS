@@ -46,7 +46,7 @@ function Home() {
       </div>
       {/* Section Unsere Behandlungen */}
       <div className="grid grid-cols-12">
-        <div className="col-span-10 col-start-2">
+        <div className="xl:col-span-10 col-span-12 xl:col-start-2">
           <div className="grid grid-cols-10">
             <div className="col-span-4 mt-20 col-start-4">
               <SectionTitle
