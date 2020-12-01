@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Typography } from "antd";
+import { Typography, Button } from "antd";
+import styled from "@emotion/styled";
 
 // Styles
 import styles from "./AppSwiper.module.scss";
@@ -9,6 +10,15 @@ import image1 from "../../../../Images/SliderImage1.png";
 
 // Sub Elements
 const { Title, Text } = Typography;
+
+let StyledAntButton = styled(Button)`
+  background: #36a0fc 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 20px #3f8cd15a;
+  border-radius: 10px;
+  opacity: 1;
+  color: #fff;
+  border: none;
+`;
 
 const AppSwiper = () => {
   const params = {
@@ -37,14 +47,20 @@ const AppSwiper = () => {
               className={`${styles.sliderImage} col-span-full`}
             />
             <div
-              className={`${styles.heroText} col-span-full px-10 col-start-5 sm:pt-4 md:px-16 md:col-start-auto  lg:px-20 lg:pb-8 xl:px-24 xl:pb-12 bottom-0 pb-0`}
+              className={`${styles.heroText} grid grid-cols-6 col-span-full px-10 col-start-5 sm:pt-4 md:px-16 md:col-start-auto  lg:px-20 lg:pb-8 xl:px-24 xl:pb-12 bottom-0 pb-0`}
             >
-              <p>
+              <p className="col-span-5 px-2">
                 Wenn unschöne Zahnverfärbungen das eigene ästhetische Empfinden
                 trüben, kann ein Bleaching Abhilfe schaffen. Dabei können Sie
                 einzelne Zähne, aber auch das ganze Gebiss bleichen lassen –
                 ganz nach Bedarf.
               </p>
+              <Button
+                size="large"
+                className={`h-1/2 m-auto w-full border-none col-span-1 app-btn`}
+              >
+                Erfahren Sie Mehr
+              </Button>
             </div>
           </div>
         </SwiperSlide>

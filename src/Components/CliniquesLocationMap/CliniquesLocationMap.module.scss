@@ -20,3 +20,16 @@
 .container {
   width: fit-content;
 }
+
+.whatsappButton {
+  background-color: #65d16d;
+  span.anticon {
+    color: #fff;
+  }
+  &:hover {
+    background-color: #65d16d90;
+    span.anticon {
+      color: #000;
+    }
+  }
+}

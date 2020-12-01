@@ -9,28 +9,15 @@ const clinique2 = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!
 function CliniquesLocationMap() {
   return (
     <>
-      <div className="grid grid-cols-2">
-        <div className="col-span-1 mt-20 pr-3 overflow-hidden grid-rows-2">
-          <div className="col-row-1">
-            <LocationMap iframe={clinique1} />
-          </div>
-          <div className="col-row-1 mt-4 flex justify-center">
-            <AddressContent
-              town="VEFADENT - ÇAMLICA"
-              description="Namık Kemal Mahallesi Sütçü İmam Caddesi Savaş Sokak No:2/5"
-            />
-          </div>
+      <div className="mt-20 pr-3 overflow-hidden grid-rows-2 ">
+        <div className="col-row-1 flex justify-center">
+          <LocationMap iframe={clinique1} />
         </div>
-        <div className="col-span-1 mt-20 pl-3 overflow-hidden">
-          <div className="col-row-1">
-            <LocationMap iframe={clinique2} />
-          </div>
-          <div className="col-row-1 mt-4 flex justify-center">
-            <AddressContent
-              town="VEFADENT - ATAKENT"
-              description="Atakent Mahallesi Mithat Paşa Caddesi No:74, Kat:1/A"
-            />
-          </div>
+        <div className="col-row-1 mt-4 flex justify-center">
+          <AddressContent
+            town="VEFADENT - ÇAMLICA"
+            description="Namık Kemal Mahallesi Sütçü İmam Caddesi Savaş Sokak No:2/5"
+          />
         </div>
       </div>
     </>

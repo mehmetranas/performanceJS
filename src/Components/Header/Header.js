@@ -60,7 +60,7 @@ function Header() {
             </div>
             <div className={`${styles.navbarActionsMediumScreen}`}>
               <OnlineBeratungButton
-                className={styles.beratung}
+                className={`${styles.beratung} app-btn app-btn-primary`}
                 size={screens.xs ? "small" : "large"}
               />
               <LanguageSelectButton size={screens.xs ? "small" : "large"} />

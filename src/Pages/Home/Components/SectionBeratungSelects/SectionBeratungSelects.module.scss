@@ -6,18 +6,18 @@
   opacity: 1;
 }
 
-.columnWithSideBorder {
-  position: relative;
+.columnWithRightBorder {
+  // position: relative;
+  position: absolute;
+  top: 17%;
+  left: 0;
+  width: 100%;
+  height: 66%;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #70707070;
   &:after {
     content: "";
-    position: absolute;
-    top: 17%;
-    left: 0;
-    width: 100%;
-    height: 66%;
-    border-width: 0 1px;
-    border-style: solid;
-    border-color: #70707070;
   }
 }
 

@@ -9,5 +9,6 @@ export { default as LocationMap } from "./LocationMap/LocationMap";
 export { default as CliniquesLocationMap } from "./CliniquesLocationMap/CliniquesLocationMap";
 export { default as Footer } from "./Footer/Footer";
 export { default as SocialIcons } from "./SocialIcons/SocialIcons";
-export { default as HealthRoute } from "./HealthRoute/HealthRoute";
+export { default as HealthRouteLarge } from "./HealthRoute/HealthRouteLarge";
+export { default as HealthRouteSmall } from "./HealthRoute/HealthRouteSmall";
 export { default as LanguageSelectBox } from "./LanguageSelectBox/LanguageSelectBox";

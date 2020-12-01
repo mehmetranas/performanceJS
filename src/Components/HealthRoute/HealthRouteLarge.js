@@ -9,7 +9,7 @@ import styles from "./HealthRoute.module.scss";
 // Images
 import image from "../../Images/HealthRoute.svg";
 
-function HealthRoute() {
+function HealthRouteLarge() {
   return (
     <>
       <div className="relative">
@@ -61,4 +61,4 @@ function HealthRoute() {
   );
 }
 
-export default HealthRoute;
+export default HealthRouteLarge;

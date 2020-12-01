@@ -1,8 +1,9 @@
 @import "./src/DesignVariables/DesignVariables.scss";
 
+$slide-height-xl-screen: 500px;
+
 .container {
-  // width: 200px;
-  height: 350px;
+  height: 400px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 20px #3f8cd15a;
   border-radius: 10px;
@@ -39,5 +40,11 @@
     & .title {
       color: #fff !important;
     }
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .container {
+    height: $slide-height-xl-screen;
   }
 }

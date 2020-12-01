@@ -27,10 +27,10 @@ let StyledAntButton = styled(Button)`
 function SectionBeratungSelects() {
   return (
     <>
-      <div className="grid grid-cols-7">
-        <div className={`col-span-5 ${styles.shadowBox}`}>
-          <div className="grid grid-cols-3">
-            <div className="col-span-1 p-4">
+      <div className="gap-4 grid grid-rows-2 md:grid-rows-1 md:gap-0 md:grid-cols-7">
+        <div className={`md:col-span-5 row-span-1 ${styles.shadowBox}`}>
+          <div className="grid grid-cols-2 md:grid-cols-3">
+            <div className={`col-span-1 p-4  relative`}>
               <StyledAntSelect
                 defaultValue="lucy"
                 size="large"
@@ -39,8 +39,9 @@ function SectionBeratungSelects() {
               >
                 <Option value="lucy">Lucy</Option>
               </StyledAntSelect>
+              <div className={`${styles.columnWithRightBorder}`}></div>
             </div>
-            <div className={`col-span-1 p-4 ${styles.columnWithSideBorder}`}>
+            <div className={`col-span-1 p-4 relative`}>
               <StyledAntSelect
                 defaultValue="lucy"
                 size="large"
@@ -49,8 +50,11 @@ function SectionBeratungSelects() {
               >
                 <Option value="lucy">Lucy</Option>
               </StyledAntSelect>
+              <div
+                className={`${styles.columnWithRightBorder} hidden md:block`}
+              ></div>
             </div>
-            <div className="col-span-1 p-4">
+            <div className="col-span-1 hidden md:block p-4">
               <StyledAntSelect
                 defaultValue="lucy"
                 size="large"
@@ -62,10 +66,26 @@ function SectionBeratungSelects() {
             </div>
           </div>
         </div>
-        <div className="col-span-2 px-4">
-          <StyledAntButton size="large" block className={`h-full`}>
-            Online Beratung
-          </StyledAntButton>
+        <div className="md:col-span-2 row-span-1 md:px-4 grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-0">
+          <div className={`md:hidden col-span-1 p-4 ${styles.shadowBox}`}>
+            <StyledAntSelect
+              defaultValue="lucy"
+              size="large"
+              bordered={false}
+              style={{ width: "100%" }}
+            >
+              <Option value="lucy">Lucy</Option>
+            </StyledAntSelect>
+          </div>
+          <div className="col-span-1">
+            <StyledAntButton
+              size="large"
+              className="h-full whitespace-normal"
+              block
+            >
+              Online Beratung
+            </StyledAntButton>
+          </div>
         </div>
       </div>
     </>
