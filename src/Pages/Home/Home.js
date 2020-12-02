@@ -49,13 +49,13 @@ function Home() {
       <div className="grid grid-cols-12">
         <div className="xl:col-span-10 col-span-12 xl:col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-8 col-start-2 md:col-span-4 md:mt-20 md:col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4 md:mt-20 mt-10 md:col-start-4">
               <SectionTitle
                 title="Unsere Behandlungen"
                 subTitle="Gesunde Zähne und ein strahlend weißes Lächeln"
               />
             </div>
-            <div className="col-span-10 mt-5">
+            <div className="col-span-10 md:mt-5">
               <EventsSlider />
             </div>
           </div>
@@ -66,13 +66,13 @@ function Home() {
       <div className="grid grid-cols-12">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4 md:mt-20 md:col-start-4">
               <SectionTitle
                 title="Ihre Gesundheitsreise"
                 subTitle="Urlaub machen für gesündere Zähne"
               />
             </div>
-            <div className="col-span-10 mt-20">
+            <div className="col-span-10 md:mt-20 mt-5">
               <div className="md:hidden block">
                 <HealthRouteSmall />
               </div>
@@ -94,7 +94,7 @@ function Home() {
                 subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
               />
             </div>
-            <div className="col-span-10 mt-5">
+            <div className="col-span-10 md:mt-5">
               <StaffSlider />
             </div>
           </div>
@@ -105,13 +105,13 @@ function Home() {
       <div className="grid grid-cols-12">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4  md:mt-20 md:col-start-4">
               <SectionTitle
                 title="Unsere Kliniken"
                 subTitle="Modernste klinische Ausstattung mit professionellem Team"
               />
             </div>
-            <div className="col-span-10 mt-5">
+            <div className="col-span-10 md:mt-5">
               <CliniquesLocationMap />
             </div>
           </div>
