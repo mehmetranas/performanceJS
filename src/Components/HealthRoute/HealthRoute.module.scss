@@ -11,3 +11,14 @@
   height: auto;
   max-height: 100%;
 }
+
+.hiddenItems {
+  overflow: hidden;
+  transition: clip-path 350ms ease-in-out;
+  clip-path: inset(0 0 0 0);
+  &.hidden {
+    transition: clip-path 350ms ease-in-out;
+    clip-path: inset(0 0 100% 0);
+    height: 0;
+  }
+}
