@@ -34,22 +34,20 @@ const AppSwiper = () => {
     <div className={"w-full my-6"}>
       <Swiper navigation>
         <SwiperSlide>
-          <div className={"relative grid grid-cols-9"}>
+          <div
+            className={`relative grid grid-cols-9 ${styles.sliderImage}`}
+            style={{ backgroundImage: `url(${image1})` }}
+          >
             <div className={`${styles.heroBackground}`}>
               <p className={styles.heroTitle}>
                 Zahn-
                 <br /> <strong>Bleaching</strong>
               </p>
             </div>
-            <img
-              src={image1}
-              alt={"Dent"}
-              className={`${styles.sliderImage} col-span-full`}
-            />
             <div
-              className={`${styles.heroText} grid grid-cols-6 col-span-full px-10 col-start-5 sm:pt-4 md:px-16 md:col-start-auto  lg:px-20 lg:pb-8 xl:px-24 xl:pb-12 bottom-0 pb-0`}
+              className={`${styles.heroText} grid grid-cols-6 col-span-full px-10 sm:pt-4 md:px-16 md:col-start-auto  lg:px-20 lg:pb-8 xl:px-24 xl:pb-12 bottom-0 pb-0`}
             >
-              <p className="col-span-5 px-2">
+              <p className="md:col-span-5  col-span-full text-center md:text-left mb-1 md:mb-0 px-2">
                 Wenn unschöne Zahnverfärbungen das eigene ästhetische Empfinden
                 trüben, kann ein Bleaching Abhilfe schaffen. Dabei können Sie
                 einzelne Zähne, aber auch das ganze Gebiss bleichen lassen –
@@ -57,7 +55,7 @@ const AppSwiper = () => {
               </p>
               <Button
                 size="large"
-                className={`h-1/2 m-auto w-full border-none col-span-1 app-btn`}
+                className={`h-1/2 m-auto w-full border-none col-span-1 app-btn hidden md:block whitespace-normal`}
               >
                 Erfahren Sie Mehr
               </Button>

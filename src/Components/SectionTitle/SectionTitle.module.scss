@@ -1,6 +1,7 @@
 .title {
   text-align: center;
-  font: normal normal bold 3.1em/1em Nunito;
+  font-weight: 600;
+  font-size: calc(1.6em + 2.9 * ((100vw - 320px) / 300));
   letter-spacing: 0px;
   color: #162162;
   opacity: 1;
@@ -8,8 +9,18 @@
 
 .subTitle {
   text-align: center;
-  font: normal normal normal 1em/1em Nunito;
+  font-size: calc(0.8em + 2.9 * ((100vw - 320px) / 300));
   letter-spacing: 1.9px;
   color: #36a0fc;
   opacity: 1;
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    line-height: 0;
+  }
+
+  .subTitle {
+    letter-spacing: 1.2px;
+  }
 }

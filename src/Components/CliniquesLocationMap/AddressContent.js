@@ -127,7 +127,9 @@ function AddressContent({ town, description }) {
               />
             }
           >
-            <span className="md:hidden">Über Whatsapp kontaktieren</span>
+            <span className="md:hidden text-white">
+              Über Whatsapp kontaktieren
+            </span>
           </Button>
           <Button
             size="large"

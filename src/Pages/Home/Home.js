@@ -49,7 +49,7 @@ function Home() {
       <div className="grid grid-cols-12">
         <div className="xl:col-span-10 col-span-12 xl:col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-full md:col-span-4 mt-20 md:col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
               <SectionTitle
                 title="Unsere Behandlungen"
                 subTitle="Gesunde Zähne und ein strahlend weißes Lächeln"
@@ -66,7 +66,7 @@ function Home() {
       <div className="grid grid-cols-12">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-full md:col-span-4 mt-20 md:col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
               <SectionTitle
                 title="Ihre Gesundheitsreise"
                 subTitle="Urlaub machen für gesündere Zähne"
@@ -88,7 +88,7 @@ function Home() {
       <div className="grid grid-cols-12 mt-32">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-full md:col-span-4 mt-20 md:col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
               <SectionTitle
                 title="Unsere Ärzte"
                 subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
@@ -105,7 +105,7 @@ function Home() {
       <div className="grid grid-cols-12">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
-            <div className="col-span-4 mt-20 col-start-4">
+            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
               <SectionTitle
                 title="Unsere Kliniken"
                 subTitle="Modernste klinische Ausstattung mit professionellem Team"

@@ -1,18 +1,18 @@
 .sliderImage {
-  height: auto;
-  max-height: 100%;
-  width: 100%;
+  padding-top: 38.57%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroBackground {
   position: relative;
   top: 0;
-  width: 39%;
+  width: 34%;
   height: 70%;
   position: absolute;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
 
   top: 0;
   left: 8%;
@@ -22,18 +22,19 @@
     width: 100%;
     height: 100%;
     background: #36a0fc 0% 0% no-repeat padding-box;
-    border-radius: 0px 0px 100px 0px;
+    border-radius: 0px 0px 10em 0px;
     opacity: 0.6;
   }
 }
 
 .heroTitle {
   line-height: 0.9em;
-  font-size: calc(1.8em + 14 * ((100vw - 320px) / 300));
-  // font: normal normal normal 4.8em/0.9em Nunito;
+  font-size: calc(1.1em + 14 * ((100vw - 320px) / 300));
   letter-spacing: 0px;
   color: #fff;
   z-index: 1;
+  margin-bottom: 0.5em;
+  padding-left: 0.45em;
 }
 
 .heroText {
@@ -45,5 +46,48 @@
     font-size: calc(1em + 2.9 * ((100vw - 320px) / 300));
     color: #ffffff;
     text-shadow: 4px 3px 10px #162162;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .sliderImage {
+    padding-top: 45.57%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .heroBackground {
+    &:before {
+      border-radius: 0 0 6em 0;
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  .sliderImage {
+    padding-top: 52.57%;
+  }
+  .heroBackground {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sliderImage {
+    padding-top: 63.57%;
+  }
+  .heroTitle {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sliderImage {
+    padding-top: 81.57%;
+  }
+
+  .heroBackground {
+    height: 45%;
+    &:before {
+      border-radius: 0 0 3em 0;
+    }
   }
 }

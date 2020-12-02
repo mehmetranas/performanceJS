@@ -10,7 +10,9 @@ function SectionBeratungText() {
   return (
     <>
       <div className={`${styles.text} col-span-4`}>
-        <p className="my-0">Jetzt einen Termin vereinbaren.</p>
+        <p className="my-0 px-2 md:text-left text-center">
+          Jetzt einen Termin vereinbaren.
+        </p>
       </div>
     </>
   );
