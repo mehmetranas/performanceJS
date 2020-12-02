@@ -32,10 +32,17 @@ $slide-height-xl-screen: 500px;
     color: $primary-color;
   }
 
+  & .information .ant-divider {
+    border-color: $primary-color;
+  }
+
   &:hover {
     background-color: $primary-color;
     cursor: pointer;
     transition: all 100ms ease-in-out;
+    & div.antDivider {
+      border-color: #fff !important;
+    }
     & .name,
     & .title {
       color: #fff !important;

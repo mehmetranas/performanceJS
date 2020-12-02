@@ -18,8 +18,12 @@ function StaffSliderItem(person) {
             backgroundSize: "cover",
           }}
         ></div>
-        <div className={`row-span-1 flex items-center flex-col justify-evenly`}>
-          <Divider className="my-4 border-t-2 border-primary-0" />
+        <div
+          className={`row-span-1 flex items-center flex-col justify-evenly information`}
+        >
+          <Divider
+            className={`my-4 border-t-2 border-primary-0 ${styles.antDivider}`}
+          />
           <p className={`mb-0 py-0 ${styles.name}`}>{name}</p>
           <p className={`mb-0 ${styles.title}`}>{title}</p>
         </div>

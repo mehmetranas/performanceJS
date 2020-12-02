@@ -9,7 +9,7 @@ import { LanguageSelectBox } from "../../Components";
 import styles from "./Header.module.scss";
 
 // Images
-import logo from "../../logo.svg";
+import logo from "../../Images/Logo_dark.svg";
 
 const HeaderItems = [
   <a href="#">Home</a>,
@@ -40,8 +40,12 @@ function Header() {
     <>
       <div className="grid-cols-12 grid w-full">
         <div className="col-span-10 col-start-2">
-          <nav className={`${styles.navbar} w-full`}>
-            <img src={logo} className={styles.logo} alt="Vefa Dent Logo" />
+          <nav className={`${styles.navbar} w-full bg-white`}>
+            <img
+              src={logo}
+              className={`${styles.logo} my-auto`}
+              alt="Vefa Dent Logo"
+            />
             <div className={`${styles.navbarActionsSmallScreen} items-center`}>
               <LanguageSelectButton size={screens.xs ? "small" : "large"} />
               <Button
