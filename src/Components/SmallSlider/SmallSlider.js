@@ -73,8 +73,8 @@ function SmallSlider({ items, callback }) {
         <div className={"w-4/5 my-6 py-5 px-4 overflow-hidden"}>
           <StyledSwiper
             {...swiperParams}
-            onSwiper={setControlledSwiper}
-            controller={{ control: controlledSwiper }}
+            // onSwiper={setControlledSwiper}
+            // controller={{ control: controlledSwiper }}
           >
             {items &&
               items.map((item, index) => (
