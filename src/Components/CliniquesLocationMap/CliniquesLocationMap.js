@@ -15,7 +15,7 @@ function CliniquesLocationMap() {
         </div>
         <div className="col-row-1 mt-4 flex justify-center">
           <AddressContent
-            town="VEFADENT - ÇAMLICA"
+            town="VEFADENT & GLOBALDENT"
             description="Namık Kemal Mahallesi Sütçü İmam Caddesi Savaş Sokak No:2/5"
           />
         </div>

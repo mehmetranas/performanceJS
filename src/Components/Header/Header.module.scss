@@ -12,9 +12,7 @@ $line-height: 1.8em;
 }
 
 img.logo {
-  // max-height: 100%;
   height: auto;
-  // width: auto;
   width: calc(3em + 90 * ((100vw - 320px) / 1580));
 }
 
@@ -45,9 +43,13 @@ img.logo {
   border-bottom: 2px solid transparent;
   letter-spacing: 0px;
 
+  &.selected {
+    color: $primary-color;
+  }
+
   &:hover,
   &:active {
-    border-bottom: 2px solid #3f8cd1;
+    border-bottom: 2px solid $primary-color;
   }
 }
 

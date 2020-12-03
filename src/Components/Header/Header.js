@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Button, Select, Grid } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
+import { NavLink } from "react-router-dom";
 
 //Components
 import { LanguageSelectBox } from "../../Components";
@@ -12,7 +13,9 @@ import styles from "./Header.module.scss";
 import logo from "../../Images/Logo_dark.svg";
 
 const HeaderItems = [
-  <a href="#">Home</a>,
+  <NavLink to="home" activeClassName={styles.selected}>
+    Home
+  </NavLink>,
   <a href="#">Über Uns</a>,
   <a href="#">Unsere Ärzte</a>,
   <a href="#">Behandlungen</a>,

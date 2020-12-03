@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
@@ -51,16 +51,31 @@ const swiperParams = {
 };
 
 function SmallSlider({ items }) {
+  // store controlled swiper instance
+  const [controlledSwiper, setControlledSwiper] = useState(null);
+  const nextSlide = () => {
+    controlledSwiper.slideNext();
+  };
+
+  const prevSlide = () => {
+    controlledSwiper.slidePrev();
+  };
+
   return (
     <>
       <div className="flex items-center justify-center relative">
         <Button
+          onClick={prevSlide}
           size="large"
           icon={<LeftOutlined className={styles.arrow} />}
           className="border-none absolute transform left-0 lg:translate-x-10 sm:translate-x-4"
         />
         <div className={"w-4/5 my-6 py-5 px-4 overflow-hidden"}>
-          <StyledSwiper {...swiperParams}>
+          <StyledSwiper
+            {...swiperParams}
+            onSwiper={setControlledSwiper}
+            controller={{ control: controlledSwiper }}
+          >
             {items &&
               items.map((item, index) => (
                 <SwiperSlide key={index}>{item}</SwiperSlide>
@@ -68,6 +83,7 @@ function SmallSlider({ items }) {
           </StyledSwiper>
         </div>
         <Button
+          onClick={nextSlide}
           size="large"
           icon={<RightOutlined className={styles.arrow} />}
           className="border-none absolute right-0 transform lg:-translate-x-10 sm:-translate-x-4"
