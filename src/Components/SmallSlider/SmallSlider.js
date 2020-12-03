@@ -50,7 +50,7 @@ const swiperParams = {
   },
 };
 
-function SmallSlider({ items }) {
+function SmallSlider({ items, callback }) {
   // store controlled swiper instance
   const [controlledSwiper, setControlledSwiper] = useState(null);
   const nextSlide = () => {
@@ -78,7 +78,9 @@ function SmallSlider({ items }) {
           >
             {items &&
               items.map((item, index) => (
-                <SwiperSlide key={index}>{item}</SwiperSlide>
+                <SwiperSlide key={index} onClick={() => callback(item)}>
+                  {item}
+                </SwiperSlide>
               ))}
           </StyledSwiper>
         </div>

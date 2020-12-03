@@ -5,7 +5,7 @@ import { Divider } from "antd";
 import styles from "./StaffSliderItem.module.scss";
 
 function StaffSliderItem(person) {
-  const { name, title, image } = person;
+  const { name, title, image, id } = person;
   return (
     <>
       <div className={`grid grid-rows-7 ${styles.container}`}>

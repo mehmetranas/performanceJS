@@ -16,11 +16,18 @@ const HeaderItems = [
   <NavLink to="home" activeClassName={styles.selected}>
     Home
   </NavLink>,
-  <a href="#">Über Uns</a>,
-  <a href="#">Unsere Ärzte</a>,
-  <a href="#">Behandlungen</a>,
-  <a href="#">Galerie</a>,
-  <a href="#">Kontakt</a>,
+  <NavLink to="uber" activeClassName={styles.selected}>
+    Über Uns
+  </NavLink>,
+  <NavLink to="behandlungen" activeClassName={styles.selected}>
+    Behandlungen
+  </NavLink>,
+  <NavLink to="gallery" activeClassName={styles.selected}>
+    Galerie
+  </NavLink>,
+  <NavLink to="contact" activeClassName={styles.selected}>
+    Kontakt
+  </NavLink>,
 ];
 
 const OnlineBeratungButton = (props) => (
@@ -44,11 +51,13 @@ function Header() {
       <div className="grid-cols-12 grid w-full">
         <div className="col-span-10 col-start-2">
           <nav className={`${styles.navbar} w-full bg-white`}>
-            <img
-              src={logo}
-              className={`${styles.logo} my-auto`}
-              alt="Vefa Dent Logo"
-            />
+            <NavLink to="/home">
+              <img
+                src={logo}
+                className={`${styles.logo} my-auto`}
+                alt="Vefa Dent Logo"
+              />
+            </NavLink>
             <div className={`${styles.navbarActionsSmallScreen} items-center`}>
               <LanguageSelectButton size={screens.xs ? "small" : "large"} />
               <Button

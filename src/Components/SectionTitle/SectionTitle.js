@@ -14,7 +14,7 @@ function SectionTitle({ title, subTitle }) {
           className={`${styles.subTitle} py-2`}
           style={{ borderColor: "#36A0FC" }}
         >
-          <p className="mb-0">{subTitle}</p>
+          <p className="mb-0 text-lg">{subTitle}</p>
         </div>
       </div>
     </>

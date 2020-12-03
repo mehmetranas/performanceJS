@@ -22,6 +22,7 @@ let StyledAntButton = styled(Button)`
 
 const AppSwiper = () => {
   const params = {
+    navigation: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
