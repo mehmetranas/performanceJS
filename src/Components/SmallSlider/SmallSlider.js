@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-
+import SwiperCore, { Controller } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Styles
@@ -10,6 +10,9 @@ import styles from "./SmallSlider.module.scss";
 
 // Components
 import { UnsereBehandlungenItem } from "../index";
+
+// install Swiper's Controller component
+Swiper.use([Controller]);
 
 const StyledSwiper = styled(Swiper)`
   overflow: visible;
@@ -50,7 +53,7 @@ const swiperParams = {
   },
 };
 
-function SmallSlider({ items = [], callback }) {
+function SmallSlider({ items, callback }) {
   // store controlled swiper instance
   const [controlledSwiper, setControlledSwiper] = useState(null);
   const nextSlide = () => {
@@ -71,19 +74,18 @@ function SmallSlider({ items = [], callback }) {
           className="border-none absolute transform left-0 lg:translate-x-10 sm:translate-x-4"
         />
         <div className={"w-4/5 my-6 py-5 px-4 overflow-hidden"}>
-          {items && items.length > 0 && (
-            <StyledSwiper
-              {...swiperParams}
-              onSwiper={setControlledSwiper}
-              controller={{ control: controlledSwiper }}
-            >
-              {items.map((item, index) => (
+          <StyledSwiper
+            {...swiperParams}
+            // onSwiper={setControlledSwiper}
+            // controller={{ control: controlledSwiper }}
+          >
+            {items &&
+              items.map((item, index) => (
                 <SwiperSlide key={index} onClick={() => callback(item)}>
                   {item}
                 </SwiperSlide>
               ))}
-            </StyledSwiper>
-          )}
+          </StyledSwiper>
         </div>
         <Button
           onClick={nextSlide}
