@@ -13,7 +13,7 @@ $line-height: 1.8em;
 
 img.logo {
   height: auto;
-  width: calc(3em + 90 * ((100vw - 320px) / 1580));
+  width: calc(7em + 90 * ((100vw - 320px) / 1580));
 }
 
 .brandTitle {
@@ -54,9 +54,6 @@ img.logo {
 }
 
 .navbarActionsSmallScreen {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
   display: none;
 }
 
@@ -84,8 +81,7 @@ Button.beratung {
 
 @media (max-width: 1200px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .navbarActionsSmallScreen {
@@ -106,6 +102,8 @@ Button.beratung {
     width: 100%;
     background-color: #fff;
     color: $primary-color-1;
+    position: absolute;
+    top: 90%;
   }
 
   .navbarLinks ul {

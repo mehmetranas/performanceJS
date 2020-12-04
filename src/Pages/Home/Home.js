@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 // Components
 import {
@@ -22,9 +23,27 @@ import {
 import styles from "./Home.module.scss";
 
 function Home() {
+  const { id } = useParams();
+
+  const scrollToSection = (id) => {
+    const target = document.getElementById(id);
+
+    if (target) {
+      let offsetTop = target.offsetTop;
+      window.scrollTo({
+        top: offsetTop - 100,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  useEffect(() => {
+    scrollToSection(id);
+  }, [id]);
+
   return (
     <>
-      <div className="grid-cols-12 grid">
+      <div className="grid-cols-12 grid" id="home">
         <div className="col-span-10 col-start-2">
           <AppSwiper />
         </div>
@@ -46,7 +65,7 @@ function Home() {
         </div>
       </div>
       {/* Section Unsere Behandlungen */}
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12" id="behandlungen">
         <div className="xl:col-span-10 col-span-12 xl:col-start-2">
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4 md:mt-20 mt-10 md:col-start-4">
@@ -102,7 +121,7 @@ function Home() {
       </div>
 
       {/* Section Cliniques */}
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12" id="contact">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4  md:mt-20 md:col-start-4">

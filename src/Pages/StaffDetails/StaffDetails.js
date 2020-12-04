@@ -5,6 +5,7 @@ import { GlobalOutlined, PhoneOutlined, MailOutlined } from "@ant-design/icons";
 
 // Components
 import { SectionTitle } from "../../Components";
+import { ScrollToTop } from "../../Utility/ScrollTop";
 
 // Data
 import { Staff } from "../../Data/data";
@@ -19,44 +20,46 @@ function StaffDetails({ match }) {
   }, [id]);
   return (
     <>
+      <ScrollToTop />
+
       <div className="grid grid-cols-12">
-        <div className="col-span-8 col-start-3 flex flex-col items-center justify-center">
-          <div className="w-1/3">
+        <div className="md:col-span-8 md:col-start-3 col-span-full flex flex-col items-center justify-center">
+          <div className="md:w-1/3 w-2/3">
             <SectionTitle
               title="Unsere Ärzte"
               subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
             />
           </div>
-          <div className="grid grid-cols-2 w-full">
-            <div className="col-span-1 flex items-baseline justify-end mr-12">
-              <img src={staff?.image} alt="" />
-            </div>
-            <div className="col-span-1">
-              <div className="auto-cols-max grid grid-rows-3">
-                <div className="row-span-1">
-                  <p className="font-semibold name py-0 text-2xl text-primary-0">
-                    {staff?.name}
-                  </p>
-                  <p className="border-b-2 py-0 text-lg text-primary-0 title">
-                    {staff?.title}
-                  </p>
-                </div>
-                <div className="border-b border-gray-300 row-span-1">
-                  <p className="flex gap-2 items-center">
-                    <GlobalOutlined /> {staff?.languages.join(", ")}
-                  </p>
-                  <p className="flex gap-2 items-center">
-                    <PhoneOutlined /> {staff?.phone}
-                  </p>
-                  <p className="flex gap-2 items-center">
-                    <MailOutlined /> {staff?.mail}
-                  </p>
-                </div>
-                <div className="row-span-1 py-4">
-                  <Button className="ant-btn app-btn rounded">
-                    Online Beratung
-                  </Button>
-                </div>
+          <div className="flex flex-col md:flex-row md:gap-10 items-center justify-start w-4/5">
+            <img
+              className="shadow-md border-white border-8 rounded-2xl"
+              src={staff?.image}
+              alt=""
+            />
+            <div className="auto-cols-max grid grid-rows-3 justify-center md:justify-start items-center">
+              <div className="row-span-1">
+                <p className="font-semibold name py-0 text-2xl text-primary-0">
+                  {staff?.name}
+                </p>
+                <p className="border-b-2 py-0 text-lg text-primary-0 title">
+                  {staff?.title}
+                </p>
+              </div>
+              <div className="border-b border-gray-300 row-span-1">
+                <p className="flex gap-2 items-center">
+                  <GlobalOutlined /> {staff?.languages.join(", ")}
+                </p>
+                <p className="flex gap-2 items-center">
+                  <PhoneOutlined /> {staff?.phone}
+                </p>
+                <p className="flex gap-2 items-center">
+                  <MailOutlined /> {staff?.mail}
+                </p>
+              </div>
+              <div className="row-span-1 py-4 flex justify-end md:justify-start">
+                <Button className="ant-btn app-btn rounded">
+                  Online Beratung
+                </Button>
               </div>
             </div>
           </div>

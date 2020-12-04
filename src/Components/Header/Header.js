@@ -13,19 +13,19 @@ import styles from "./Header.module.scss";
 import logo from "../../Images/Logo_dark.svg";
 
 const HeaderItems = [
-  <NavLink to="home" activeClassName={styles.selected}>
+  <NavLink to="/home" activeClassName={styles.selected}>
     Home
   </NavLink>,
-  <NavLink to="uber" activeClassName={styles.selected}>
+  <NavLink to="/uber" activeClassName={styles.selected}>
     Über Uns
   </NavLink>,
-  <NavLink to="behandlungen" activeClassName={styles.selected}>
+  <NavLink to="/behandlungen" activeClassName={styles.selected}>
     Behandlungen
   </NavLink>,
-  <NavLink to="gallery" activeClassName={styles.selected}>
+  <NavLink to="/gallery" activeClassName={styles.selected}>
     Galerie
   </NavLink>,
-  <NavLink to="contact" activeClassName={styles.selected}>
+  <NavLink to="/contact" activeClassName={styles.selected}>
     Kontakt
   </NavLink>,
 ];
@@ -69,8 +69,8 @@ function Header() {
             </div>
             <div ref={headerRef} className={`${styles.navbarLinks} ml-auto`}>
               <ul>
-                {HeaderItems.map((item) => (
-                  <li>{item}</li>
+                {HeaderItems.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
