@@ -12,6 +12,40 @@ export const Staff = [
     languages: ["English", "Turkish"],
     phone: "+90 216 123456789",
     mail: "doktor.abc@globallydent.com",
+    university: "Cumhuriyet Üniversitesi",
+    education: [
+      {
+        title: "Bachelor",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle2: "Zahnmedizinische Fakultät",
+        period: "1999 - 2003",
+      },
+      {
+        title: "Master",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle1: "Zahnmedizinische Fakultät",
+        period: "2004 - 2006",
+      },
+    ],
+    experience: [
+      {
+        title: "Zahnärztin",
+        subTitle: "Erzurumluoğlu Praxis",
+        period: "2003 - 2012",
+      },
+      {
+        title: "Zahnärztin",
+        subTitle: "Vefadent Poliklinik",
+        period: "2012 - Heute",
+      },
+    ],
+    prizes: [
+      {
+        title: "Preise",
+        subTitle: "Türkiye Doktorlar Ödülü",
+        period: "2020",
+      },
+    ],
   },
   {
     id: 2,
@@ -21,6 +55,40 @@ export const Staff = [
     languages: ["English", "Turkish"],
     phone: "+90 216 123456789",
     mail: "doktor.abc@globallydent.com",
+    university: "Cumhuriyet Üniversitesi",
+    education: [
+      {
+        title: "Bachelor",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle2: "Zahnmedizinische Fakultät",
+        period: "1999 - 2003",
+      },
+      {
+        title: "Master",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle1: "Zahnmedizinische Fakultät",
+        period: "2004 - 2006",
+      },
+    ],
+    experience: [
+      {
+        title: "Zahnärztin",
+        subTitle: "Erzurumluoğlu Praxis",
+        period: "2003 - 2012",
+      },
+      {
+        title: "Zahnärztin",
+        subTitle: "Vefadent Poliklinik",
+        period: "2012 - Heute",
+      },
+    ],
+    prizes: [
+      {
+        title: "Preise",
+        subTitle: "Türkiye Doktorlar Ödülü",
+        period: "2020",
+      },
+    ],
   },
   {
     id: 3,
@@ -30,6 +98,40 @@ export const Staff = [
     languages: ["English", "Turkish"],
     phone: "+90 216 123456789",
     mail: "doktor.abc@globallydent.com",
+    university: "Cumhuriyet Üniversitesi",
+    education: [
+      {
+        title: "Bachelor",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle2: "Zahnmedizinische Fakultät",
+        period: "1999 - 2003",
+      },
+      {
+        title: "Master",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle1: "Zahnmedizinische Fakultät",
+        period: "2004 - 2006",
+      },
+    ],
+    experience: [
+      {
+        title: "Zahnärztin",
+        subTitle: "Erzurumluoğlu Praxis",
+        period: "2003 - 2012",
+      },
+      {
+        title: "Zahnärztin",
+        subTitle: "Vefadent Poliklinik",
+        period: "2012 - Heute",
+      },
+    ],
+    prizes: [
+      {
+        title: "Preise",
+        subTitle: "Türkiye Doktorlar Ödülü",
+        period: "2020",
+      },
+    ],
   },
   {
     id: 4,
@@ -39,5 +141,39 @@ export const Staff = [
     languages: ["English", "Turkish"],
     phone: "+90 216 123456789",
     mail: "doktor.abc@globallydent.com",
+    university: "Cumhuriyet Üniversitesi",
+    education: [
+      {
+        title: "Bachelor",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle2: "Zahnmedizinische Fakultät",
+        period: "1999 - 2003",
+      },
+      {
+        title: "Master",
+        subTitle: "Cumhuriyet Üniversitesi",
+        subTitle1: "Zahnmedizinische Fakultät",
+        period: "2004 - 2006",
+      },
+    ],
+    rience: [
+      {
+        title: "Zahnärztin",
+        subTitle: "Erzurumluoğlu Praxis",
+        period: "2003 - 2012",
+      },
+      {
+        title: "Zahnärztin",
+        subTitle: "Vefadent Poliklinik",
+        period: "2012 - Heute",
+      },
+    ],
+    prizes: [
+      {
+        title: "Preise",
+        subTitle: "Türkiye Doktorlar Ödülü",
+        period: "2020",
+      },
+    ],
   },
 ];
