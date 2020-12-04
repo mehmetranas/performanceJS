@@ -75,7 +75,7 @@ function SmallSlider({ items, callback }) {
           <StyledSwiper
             {...swiperParams}
             onSwiper={setControlledSwiper}
-            controller={{ control: controlledSwiper }}
+            // controller={{ control: controlledSwiper }}
           >
             {items &&
               items.map((item, index) => (
