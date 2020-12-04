@@ -104,7 +104,7 @@ function Home() {
       </div>
 
       {/* Section Staff Slider */}
-      <div className="grid grid-cols-12 md:mt-32">
+      <div className="grid grid-cols-12 md:mt-32" id="staff">
         <div className="col-span-10 col-start-2">
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">

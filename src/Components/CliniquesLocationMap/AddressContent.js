@@ -134,7 +134,7 @@ function AddressContent({ town, description }) {
           <Button
             size="large"
             className="px-2 app-btn h-14"
-            icon={<PhoneIcon style={{ color: "#000" }} />}
+            icon={<PhoneIcon />}
           >
             Jetzt Anrufen
           </Button>

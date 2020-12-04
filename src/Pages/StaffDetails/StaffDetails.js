@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Divider, Button } from "antd";
+import { LeftOutlined } from "@ant-design/icons";
 
 // Components
 import { SectionTitle } from "../../Components";
@@ -30,9 +32,19 @@ function StaffDetails({ match }) {
               subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
             />
           </div>
-          <div className="w-4/5 flex flex-col gap-10">
+          <div className="w-4/5 flex flex-col gap-10 md:mt-0 mt-6">
             <PersonDetails staff={staff} />
             <PersonInformation staff={staff} />
+            <Divider className="border-primary-1" />
+            <div className="action">
+              <Button
+                size="large"
+                icon={<LeftOutlined />}
+                className="app-btn rounded flex items-center justify-center w-full md:w-auto "
+              >
+                Alle Ärzte/innen
+              </Button>
+            </div>
           </div>
         </div>
       </div>

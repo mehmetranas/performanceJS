@@ -19,11 +19,11 @@ const HeaderItems = [
   <NavLink to="/uber" activeClassName={styles.selected}>
     Über Uns
   </NavLink>,
+  <NavLink to="/staff" activeClassName={styles.selected}>
+    Unsere Ärzte
+  </NavLink>,
   <NavLink to="/behandlungen" activeClassName={styles.selected}>
     Behandlungen
-  </NavLink>,
-  <NavLink to="/gallery" activeClassName={styles.selected}>
-    Galerie
   </NavLink>,
   <NavLink to="/contact" activeClassName={styles.selected}>
     Kontakt
