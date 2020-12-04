@@ -24,7 +24,7 @@ function FooterSection3() {
           </span>
         </p>
         <p className={styles.text}>
-          <span>+90 216 344 01 34</span>
+          <span>+49 176 23189214</span>
           <br />
           <span>info@vefadent.com.tr</span>
         </p>
