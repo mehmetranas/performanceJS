@@ -51,7 +51,7 @@ function Header() {
       <div className="grid-cols-12 grid w-full">
         <div className="col-span-10 col-start-2">
           <nav className={`${styles.navbar} w-full bg-white`}>
-            <NavLink to="/home">
+            <NavLink to="/home" className="h-full">
               <img
                 src={logo}
                 className={`${styles.logo} my-auto`}
