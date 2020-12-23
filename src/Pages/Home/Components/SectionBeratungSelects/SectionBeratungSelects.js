@@ -25,6 +25,15 @@ let StyledAntButton = styled(Button)`
 `;
 
 function SectionBeratungSelects() {
+  const selectBoxData = {
+    treatments: [
+      "Zahn-Bleaching",
+      "Zahn-Implantate",
+      "Kiefer-Orthopedie",
+      "Wurzelkanal-Behandlung",
+    ],
+    clinics: ["Vefadent Ümraniye"],
+  };
   return (
     <>
       <div className="gap-4 grid grid-rows-2 md:grid-rows-1 md:gap-0 md:grid-cols-7">
@@ -32,23 +41,29 @@ function SectionBeratungSelects() {
           <div className="grid grid-cols-2 md:grid-cols-3">
             <div className={`col-span-1 p-4  relative`}>
               <StyledAntSelect
-                defaultValue="lucy"
+                defaultValue="istanbul"
                 size="large"
                 bordered={false}
                 style={{ width: "100%" }}
+                id="city"
               >
-                <Option value="lucy">Lucy</Option>
+                <Option value="istanbul">Istanbul</Option>
               </StyledAntSelect>
               <div className={`${styles.columnWithRightBorder}`}></div>
             </div>
             <div className={`col-span-1 p-4 relative`}>
               <StyledAntSelect
-                defaultValue="lucy"
+                placeholder="Einheit auswählen"
                 size="large"
                 bordered={false}
                 style={{ width: "100%" }}
+                id="treatment"
               >
-                <Option value="lucy">Lucy</Option>
+                {selectBoxData.treatments?.map((item, index) => (
+                  <Option value={item} key={index}>
+                    {item}
+                  </Option>
+                ))}
               </StyledAntSelect>
               <div
                 className={`${styles.columnWithRightBorder} hidden md:block`}
@@ -56,12 +71,17 @@ function SectionBeratungSelects() {
             </div>
             <div className="col-span-1 hidden md:block p-4">
               <StyledAntSelect
-                defaultValue="lucy"
+                placeholder="Klinik wählen"
                 size="large"
                 bordered={false}
                 style={{ width: "100%" }}
+                id="clinic"
               >
-                <Option value="lucy">Lucy</Option>
+                {selectBoxData.clinics?.map((clinic, index) => (
+                  <Option value={clinic} key={index}>
+                    {clinic}
+                  </Option>
+                ))}
               </StyledAntSelect>
             </div>
           </div>
@@ -69,12 +89,17 @@ function SectionBeratungSelects() {
         <div className="md:col-span-2 row-span-1 md:px-4 grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-0">
           <div className={`md:hidden col-span-1 p-4 ${styles.shadowBox}`}>
             <StyledAntSelect
-              defaultValue="lucy"
+              placeholder="Klinik wählen"
               size="large"
               bordered={false}
               style={{ width: "100%" }}
+              id="clinic-sm-screen"
             >
-              <Option value="lucy">Lucy</Option>
+              {selectBoxData.clinics?.map((clinic, index) => (
+                <Option value={clinic} key={index}>
+                  {clinic}
+                </Option>
+              ))}
             </StyledAntSelect>
           </div>
           <div className="col-span-1">
