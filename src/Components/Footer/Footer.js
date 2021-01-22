@@ -6,7 +6,7 @@ import FooterSection2 from "./FooterSection2";
 import FooterSection3 from "./FooterSection3";
 
 //  Images
-import logo from "../../Images/logo-2.svg";
+import logo from "../../Images/Logo_light.svg";
 
 function Footer() {
   return (

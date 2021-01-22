@@ -7,7 +7,7 @@ function FooterSection1() {
   return (
     <>
       <div>
-        <p className={styles.title}>Vefa Dent</p>
+        <p className={styles.title}>Globally Dent</p>
         <p className={styles.text}>
           <a href="#">Über Uns</a>
         </p>
