@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Button, Select, Grid } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 //Components
 import { LanguageSelectBox } from "../../Components";
@@ -13,21 +14,21 @@ import styles from "./Header.module.scss";
 import logo from "../../Images/Logo_dark.svg";
 
 const HeaderItems = [
-  <NavLink to="/home" activeClassName={styles.selected}>
+  <HashLink smooth to="#home" activeClassName={styles.selected}>
     Home
-  </NavLink>,
-  <NavLink to="/uber" activeClassName={styles.selected}>
+  </HashLink>,
+  <HashLink smooth to="#uber" activeClassName={styles.selected}>
     Über Uns
-  </NavLink>,
-  <NavLink to="/staff" activeClassName={styles.selected}>
+  </HashLink>,
+  <HashLink smooth to="#staff" activeClassName={styles.selected}>
     Unsere Ärzte
-  </NavLink>,
-  <NavLink to="/behandlungen" activeClassName={styles.selected}>
+  </HashLink>,
+  <HashLink smooth to="#behandlungen" activeClassName={styles.selected}>
     Behandlungen
-  </NavLink>,
-  <NavLink to="/contact" activeClassName={styles.selected}>
+  </HashLink>,
+  <HashLink smooth to="#contact" activeClassName={styles.selected}>
     Kontakt
-  </NavLink>,
+  </HashLink>,
 ];
 
 const OnlineBeratungButton = (props) => (
@@ -51,7 +52,7 @@ function Header() {
       <div className="grid-cols-12 grid w-full">
         <div className="col-span-10 col-start-2">
           <nav className={`${styles.navbar} w-full bg-white`}>
-            <NavLink to="/home" className="h-full">
+            <NavLink to="/" className="h-full">
               <img
                 src={logo}
                 className={`${styles.logo} my-auto`}

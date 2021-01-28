@@ -42,10 +42,7 @@ function App() {
               <Layout.Content>
                 <div className="site-layout-content pb-5">
                   <Switch>
-                    <Route exact path="/">
-                      <Redirect to="/home" />
-                    </Route>
-                    <Route exact path="/:id" component={Home} />
+                    <Route exact path="/" component={Home} />
                     <Route exact path="/staff/:id" component={StaffDetails} />
                   </Switch>
                 </div>

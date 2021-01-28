@@ -38,7 +38,9 @@ function Home() {
   };
 
   useEffect(() => {
-    scrollToSection(id);
+    if (id) {
+      scrollToSection(id);
+    }
   }, [id]);
 
   return (
