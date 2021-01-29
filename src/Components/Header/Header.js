@@ -14,19 +14,19 @@ import styles from "./Header.module.scss";
 import logo from "../../Images/Logo_dark.svg";
 
 const HeaderItems = [
-  <HashLink smooth to="#home" activeClassName={styles.selected}>
+  <HashLink smooth to="#home">
     Home
   </HashLink>,
-  <HashLink smooth to="#uber" activeClassName={styles.selected}>
+  <HashLink smooth to="#uber">
     Über Uns
   </HashLink>,
-  <HashLink smooth to="#staff" activeClassName={styles.selected}>
+  <HashLink smooth to="#staff">
     Unsere Ärzte
   </HashLink>,
-  <HashLink smooth to="#behandlungen" activeClassName={styles.selected}>
+  <HashLink smooth to="#behandlungen">
     Behandlungen
   </HashLink>,
-  <HashLink smooth to="#contact" activeClassName={styles.selected}>
+  <HashLink smooth to="#contact">
     Kontakt
   </HashLink>,
 ];
@@ -56,7 +56,7 @@ function Header() {
               <img
                 src={logo}
                 className={`${styles.logo} my-auto`}
-                alt="Vefa Dent Logo"
+                alt="Globally Dent Logo"
               />
             </NavLink>
             <div className={`${styles.navbarActionsSmallScreen} items-center`}>
