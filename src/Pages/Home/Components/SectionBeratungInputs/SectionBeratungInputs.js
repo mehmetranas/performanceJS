@@ -184,6 +184,7 @@ function SectionBeratungInputs() {
                 size="large"
                 className="h-full whitespace-normal"
                 block
+                onClick={() => window.tidioChatApi.open()}
               >
                 Online Beratung
               </StyledAntButtonLight>

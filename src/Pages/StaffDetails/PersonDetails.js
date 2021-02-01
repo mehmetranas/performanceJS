@@ -39,7 +39,12 @@ function PersonDetails({ staff }) {
           </div>
         </div>
         <div className="col-span-10 col-start-2 md:col-start-auto md:col-span-1">
-          <Button size="large" className="ant-btn app-btn rounded" block>
+          <Button
+            onClick={() => window.tidioChatApi.open()}
+            size="large"
+            className="ant-btn app-btn rounded"
+            block
+          >
             Online Beratung
           </Button>
         </div>

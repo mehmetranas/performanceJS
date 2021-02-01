@@ -32,7 +32,9 @@ const HeaderItems = [
 ];
 
 const OnlineBeratungButton = (props) => (
-  <Button {...props}>Online Beratung</Button>
+  <Button {...props} onClick={() => window.tidioChatApi.open()}>
+    Online Beratung
+  </Button>
 );
 
 const LanguageSelectButton = (props) => <LanguageSelectBox {...props} />;
