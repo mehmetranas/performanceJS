@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Typography, Button } from "antd";
 import styled from "@emotion/styled";
 
@@ -21,17 +22,17 @@ let StyledAntButton = styled(Button)`
 `;
 
 const AppSwiper = () => {
+  SwiperCore.use([Autoplay, Navigation]);
   const params = {
     navigation: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    autoplay: {
+      delay: 3500,
     },
   };
 
   return (
     <div className={"w-full my-6"}>
-      <Swiper navigation>
+      <Swiper autoplay navigation loop>
         <SwiperSlide key={1}>
           <SwiperItem1 />
         </SwiperSlide>
