@@ -118,6 +118,7 @@ function AddressContent({ town, description }) {
           className={`${styles.actions} col-row-1 flex gap-2 justify-center mt-3 flex-col md:flex-row w-9/12 md:w-full`}
         >
           <Button
+            href="whatsapp://send?abid=+4917623189214"
             size="large"
             className={`border-none flex justify-center items-center rounded-lg h-14 ${styles.whatsappButton}`}
             icon={
@@ -133,16 +134,18 @@ function AddressContent({ town, description }) {
           </Button>
           <Button
             size="large"
-            className="px-2 app-btn h-14"
+            href="tel:+49 176 23189214"
+            className="ant-btn ant-btn-lg app-btn flex h-14 items-center justify-center m-0 py-0 px-2"
             icon={<PhoneIcon />}
           >
             Jetzt Anrufen
           </Button>
           <Button
             size="large"
-            type="link"
+            target="_blank"
+            href="https://www.google.com/maps/place/Vefadent+2+A%C4%9F%C4%B1z+ve+Di%C5%9F+Sa%C4%9Fl%C4%B1%C4%9F%C4%B1+Poliklini%C4%9Fi/@41.0232278,29.0828751,16z/data=!4m5!3m4!1s0x0:0xf9275f6a859ff96f!8m2!3d41.024021!4d29.0836691?hl=tr"
             icon={<RoutePlanIcon />}
-            className="px-2 h-14 app-btn"
+            className="ant-btn ant-btn-lg app-btn flex h-14 items-center justify-center m-0 py-0 px-2"
           >
             Route Planen
           </Button>

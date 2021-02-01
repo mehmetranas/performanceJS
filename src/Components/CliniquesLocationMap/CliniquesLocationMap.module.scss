@@ -27,7 +27,9 @@
   span.anticon {
     color: #fff;
   }
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: #65d16d90;
     span.anticon {
       color: #000;
