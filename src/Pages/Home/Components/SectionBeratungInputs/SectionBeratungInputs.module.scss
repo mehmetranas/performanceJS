@@ -27,3 +27,32 @@
     opacity: 0.6;
   }
 }
+
+.ant-select {
+  text-align: center;
+  font: normal normal normal 16px/22px Nunito;
+  letter-spacing: 0px;
+  color: #162162;
+  opacity: 1;
+}
+
+.columnWithRightBorder {
+  position: absolute;
+  top: 17%;
+  right: 0;
+  width: 0;
+  height: 66%;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #70707070;
+  &:after {
+    content: "";
+  }
+}
+
+.shadowBox {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 20px #3f8cd15a;
+  border-radius: 10px;
+  opacity: 1;
+}

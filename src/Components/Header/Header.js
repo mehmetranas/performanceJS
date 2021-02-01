@@ -14,19 +14,19 @@ import styles from "./Header.module.scss";
 import logo from "../../Images/Logo_dark.svg";
 
 const HeaderItems = [
-  <HashLink smooth to="#home">
+  <HashLink smooth to="/#home">
     Home
   </HashLink>,
-  <HashLink smooth to="#uber">
+  <HashLink smooth to="/#uber">
     Über Uns
   </HashLink>,
-  <HashLink smooth to="#staff">
+  <HashLink smooth to="/#staff">
     Unsere Ärzte
   </HashLink>,
-  <HashLink smooth to="#behandlungen">
+  <HashLink smooth to="/#behandlungen">
     Behandlungen
   </HashLink>,
-  <HashLink smooth to="#contact">
+  <HashLink smooth to="/#contact">
     Kontakt
   </HashLink>,
 ];

@@ -57,11 +57,8 @@ function Home() {
             <div className="sectionBeratungsText  col-span-10 xl:col-span-3 py-3">
               <SectionBeratungText />
             </div>
-            <div className="selectBox col-span-10 md:col-span-7">
-              <div className="grid grid-rows-2 items-center h-full xl:gap-0 gap-4">
-                <SectionBeratungSelects />
-                <SectionBeratungInputs />
-              </div>
+            <div className="selectBox grid items-center col-span-10 md:col-span-7">
+              <SectionBeratungInputs />
             </div>
           </div>
         </div>

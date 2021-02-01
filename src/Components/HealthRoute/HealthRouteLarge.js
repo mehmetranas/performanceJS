@@ -28,7 +28,7 @@ function HealthRouteLarge() {
             text="Nach der Beratung vereinbaren wir einen passenden Termin mit Ihnen für Ihre perfekte Gesundheitsreise."
           />
         </div>
-        <div className="absolute w-1/6" style={{ top: "42%", right: "48%" }}>
+        <div className="absolute w-1/6" style={{ top: "42%", right: "53%" }}>
           <Description
             title1="Online"
             title2="Beratung"
