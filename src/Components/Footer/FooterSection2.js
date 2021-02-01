@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 // Styles
 import styles from "./Footer.module.scss";
@@ -8,22 +9,34 @@ function FooterSection2() {
     <>
       <div>
         <p className={styles.title}>
-          <a href="#">Behandlungen</a>
+          <HashLink smooth to="/#behandlungen">
+            Behandlungen
+          </HashLink>
         </p>
         <p className={styles.text}>
-          <a href="#">Zahnbleaching</a>
+          <HashLink smooth to="/#behandlungen">
+            Zahnbleaching
+          </HashLink>
         </p>
         <p className={styles.text}>
-          <a href="#">Zahnimplantate</a>
+          <HashLink smooth to="/#behandlungen">
+            Zahnimplantate
+          </HashLink>
         </p>
         <p className={styles.text}>
-          <a href="#">Kieferorthopädie</a>
+          <HashLink smooth to="/#behandlungen">
+            Kieferorthopädie
+          </HashLink>
         </p>
         <p className={styles.text}>
-          <a href="#">Wurzelkanalbehandlung</a>
+          <HashLink smooth to="/#behandlungen">
+            Wurzelkanalbehandlung
+          </HashLink>
         </p>
         <p className={styles.text}>
-          <a href="#">Und vieles mehr...</a>
+          <HashLink smooth to="/#behandlungen">
+            Und vieles mehr...
+          </HashLink>
         </p>
       </div>
     </>
