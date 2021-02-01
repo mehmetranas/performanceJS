@@ -14,20 +14,24 @@ function PersonInformation({ staff }) {
             items={staff?.education}
           />
         </div>
-        <div className="col-span-1 text-center md:text-left">
-          <PersonInformationItem
-            title="Erfahrung"
-            subTitle="Berufliche Erfahrungen"
-            items={staff?.experience}
-          />
-        </div>
-        <div className="col-span-1 text-center md:text-left">
-          <PersonInformationItem
-            title="Sonstiges"
-            subTitle="Weitere Informationen"
-            items={staff?.prizes}
-          />
-        </div>
+        {staff?.experience && (
+          <div className="col-span-1 text-center md:text-left">
+            <PersonInformationItem
+              title="Erfahrung"
+              subTitle="Berufliche Erfahrungen"
+              items={staff?.experience}
+            />
+          </div>
+        )}
+        {staff?.prizes && (
+          <div className="col-span-1 text-center md:text-left">
+            <PersonInformationItem
+              title="Sonstiges"
+              subTitle="Weitere Informationen"
+              items={staff?.prizes}
+            />
+          </div>
+        )}
       </div>
     </>
   );
