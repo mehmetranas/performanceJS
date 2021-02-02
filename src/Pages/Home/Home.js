@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import {
   AppSwiper,
   SectionBeratungText,
-  SectionBeratungSelects,
   SectionBeratungInputs,
 } from "./Components";
 
@@ -13,10 +12,10 @@ import {
   SectionTitle,
   EventsSlider,
   StaffSlider,
-  LocationMap,
   CliniquesLocationMap,
   HealthRouteLarge,
   HealthRouteSmall,
+  AboutUs,
 } from "../../Components";
 
 // Select
@@ -114,6 +113,23 @@ function Home() {
             </div>
             <div className="col-span-10 md:mt-5">
               <StaffSlider />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section Uber Us */}
+      <div className="grid grid-cols-12 md:mt-32" id="uberuns">
+        <div className="col-span-10 col-start-2">
+          <div className="grid grid-cols-10">
+            <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
+              <SectionTitle
+                title="über uns"
+                subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
+              />
+            </div>
+            <div className="col-span-10 md:mt-5">
+              <AboutUs />
             </div>
           </div>
         </div>

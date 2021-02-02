@@ -12,3 +12,4 @@ export { default as SocialIcons } from "./SocialIcons/SocialIcons";
 export { default as HealthRouteLarge } from "./HealthRoute/HealthRouteLarge";
 export { default as HealthRouteSmall } from "./HealthRoute/HealthRouteSmall";
 export { default as LanguageSelectBox } from "./LanguageSelectBox/LanguageSelectBox";
+export { default as AboutUs } from "./AboutUs/AboutUs";

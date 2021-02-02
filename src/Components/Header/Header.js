@@ -17,7 +17,7 @@ const HeaderItems = [
   <HashLink smooth to="/#home">
     Home
   </HashLink>,
-  <HashLink smooth to="/#uber">
+  <HashLink smooth to="/#uberuns">
     Über Uns
   </HashLink>,
   <HashLink smooth to="/#staff">

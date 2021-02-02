@@ -20,7 +20,7 @@ const AppSwiper = () => {
           <SwiperItem1 title1="Zahn-" title2="Bleaching" image={image1} />
         </SwiperSlide>
         <SwiperSlide key={2}>
-          <SwiperItem1 title1="Zahn-" title2="Bleaching" image={image2} />
+          <SwiperItem1 title1="Zahn-" title2="Implantate" image={image2} />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -7,7 +7,7 @@ function SectionTitle({ title, subTitle }) {
   return (
     <>
       <div className="divide-y">
-        <div className={`${styles.title} py-1 md:py-2`}>
+        <div className={`${styles.title} py-1 md:py-2 capitalize`}>
           <p className="mb-0 text-2xl md:text-4xl">{title}</p>
         </div>
         <div
