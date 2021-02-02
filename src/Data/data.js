@@ -11,6 +11,22 @@ import burcu from "../Images/burcu.png";
 import busra from "../Images/busra.png";
 import oguz from "../Images/oguz.png";
 import fatih from "../Images/fatih.png";
+import dentBleaching from "../Images/dent-bleaching.svg";
+import dentBehandlung from "../Images/dent-behandlung.svg";
+import dentImplantate from "../Images/dent-implantate.svg";
+import dentOrthaopediatate from "../Images/dent-orthopedia.svg";
+import dentMunt from "../Images/mund.png";
+import dentKieferorthopadie from "../Images/dentKieferorthopadie.svg";
+import dentEndodontie from "../Images/dentEndodontie.svg";
+import dentZirkoniumkrone from "../Images/dentZirkoniumkrone.svg";
+import dentComposite from "../Images/dentComposite.svg";
+import dentKronenbrücke from "../Images/dentKronenbrücke.svg";
+import dentParodontologie from "../Images/dentParodontologie.svg";
+import dentImplant from "../Images/dentImplant.svg";
+import dentZahnaufhellung from "../Images/dentZahnaufhellung.svg";
+import dentSchwangerschaft from "../Images/dentSchwangerschaft.svg";
+import dentKinderzahne from "../Images/dentKinderzahne.svg";
+import dentZahnersatz from "../Images/dentZahnersatz.svg";
 
 export const Staff = [
   {
@@ -521,5 +537,92 @@ export const Staff = [
       //     period: "2020",
       //   },
     ],
+  },
+];
+
+export const servicesItems = [
+  {
+    image: dentBleaching,
+    title: "Zahn- Bleaching",
+    content:
+      "Wenn unschöne Zahnverfärbungen das eigene ästhetische Empfinden trüben, kann ein Bleaching Abhilfe schaffen. Dabei können Sie einzelne Zähne, aber auch das ganze Gebiss bleichen lassen – ganz nach Bedarf.",
+  },
+  {
+    image: dentBehandlung,
+    title: "Wurzelkanal- behandlung",
+    content:
+      "Diese Behandlungsmethode wird in Fällen angewendet, in denen der Nerv (Pulpa) im Zahn aufgrund von Karies oder Trauma beschädigt ist oder stirbt.",
+  },
+  {
+    image: dentOrthaopediatate,
+    title: "Kiefer- orthopädie",
+    content:
+      "Kieferorthopädische Behandlungen verhindern das Auftreten von Störungen im Zahn-Kiefer-Gesichtsbereich und stoppen und behandeln das Fortschreiten bestehender Störungen.",
+  },
+  {
+    image: dentImplantate,
+    title: "Zahn- Implantate",
+    content:
+      "Implantate sind künstliche High-Tech-Zahnwurzeln aus wertvollem Material wie bspw. Titan, die im Kieferknochen platziert werden, um die Funktion und Ästhetik fehlender Zähne wiederherzustellen.",
+  },
+  {
+    image: dentMunt,
+    title: "Mund- und Kieferchirurgie",
+    content: "",
+  },
+  {
+    image: dentKieferorthopadie,
+    title: "Kieferorthopädie - Zahnspangen",
+    content: "",
+  },
+  {
+    image: dentEndodontie,
+    title: "Endodontie (Wurzelkanalbehandlung)",
+    content: "",
+  },
+  {
+    image: dentZirkoniumkrone,
+    title: "Zirkoniumkrone",
+    content: "",
+  },
+  {
+    image: dentComposite,
+    title: "Composite Filling - Zahnfarbfüllungen",
+    content: "",
+  },
+  {
+    image: dentKronenbrücke,
+    title: "Kronenbrücke",
+    content: "",
+  },
+  {
+    image: dentParodontologie,
+    title: "Parodontologie - Zahnfleischerkrankungen",
+    content: "",
+  },
+  {
+    image: dentImplant,
+    title: "Implant",
+    content: "",
+  },
+  {
+    image: dentZahnaufhellung,
+    title: "Zahnaufhellung - Bleachen",
+    content: "",
+  },
+  {
+    image: dentSchwangerschaft,
+    title: "(Mund- und Zahnpflege in der Schwangerschaft)",
+    content: "",
+  },
+  {
+    image: dentKinderzahne,
+    title: "Pädodontie - Kinderzähne",
+    content: "",
+  },
+  {
+    image: dentZahnersatz,
+    title: "Prothetik - Zahnersatz",
+    content: "",
   },
 ];

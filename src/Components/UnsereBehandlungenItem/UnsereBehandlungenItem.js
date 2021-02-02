@@ -8,7 +8,7 @@ function UnsereBehandlungenItem(event) {
   return (
     <>
       <div className={`grid grid-rows-3 ${styles.container}`}>
-        <div className="row-span-1 p-4 flex items-center justify-center">
+        <div className="row-span-1 p-4 flex items-center justify-evenly">
           <img src={image} alt="" />
           <p className={`${styles.cardTitle} text-left mb-0 pl-2`}>{title}</p>
         </div>
