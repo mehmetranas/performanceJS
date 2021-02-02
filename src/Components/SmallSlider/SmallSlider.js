@@ -34,7 +34,10 @@ const StyledSwiper = styled(Swiper)`
 const swiperParams = {
   slidesPerView: 1,
   spaceBetween: 20,
-  navigation: false,
+  navigation: {
+    nextEl: ".slide-next-button",
+    prevEl: ".slide-prev-button",
+  },
   breakpoints: {
     2250: {
       slidesPerView: 5,
@@ -52,31 +55,16 @@ const swiperParams = {
 };
 
 function SmallSlider({ items, callback }) {
-  // store controlled swiper instance
-  const [controlledSwiper, setControlledSwiper] = useState(null);
-  const nextSlide = () => {
-    controlledSwiper.slideNext();
-  };
-
-  const prevSlide = () => {
-    controlledSwiper.slidePrev();
-  };
-
   return (
     <>
       <div className="flex items-center justify-center relative">
         <Button
-          onClick={prevSlide}
           size="large"
           icon={<LeftOutlined className={styles.arrow} />}
-          className="border-none absolute transform left-0 lg:translate-x-10 sm:translate-x-4"
+          className="border-none absolute transform left-0 lg:translate-x-10 sm:translate-x-4 slide-prev-button"
         />
         <div className={"w-4/5 my-6 py-5 px-4 overflow-hidden"}>
-          <StyledSwiper
-            {...swiperParams}
-            onSwiper={setControlledSwiper}
-            // controller={{ control: controlledSwiper }}
-          >
+          <StyledSwiper {...swiperParams}>
             {items &&
               items.map((item, index) => (
                 <SwiperSlide key={index} onClick={() => callback(item)}>
@@ -86,10 +74,9 @@ function SmallSlider({ items, callback }) {
           </StyledSwiper>
         </div>
         <Button
-          onClick={nextSlide}
           size="large"
           icon={<RightOutlined className={styles.arrow} />}
-          className="border-none absolute right-0 transform lg:-translate-x-10 sm:-translate-x-4"
+          className="border-none absolute right-0 transform lg:-translate-x-10 sm:-translate-x-4 slide-next-button"
         />
       </div>
     </>
