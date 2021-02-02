@@ -26,7 +26,7 @@ function FooterSection3() {
         <p className={styles.text}>
           <span>+49 176 23189214</span>
           <br />
-          <span>info@vefadent.com.tr</span>
+          <span>info@globallydent.com</span>
         </p>
         <p className={styles.text}>Online Beratung</p>
         <SocialIcons />

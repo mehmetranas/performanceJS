@@ -13,9 +13,16 @@
   position: absolute;
   display: flex;
   align-items: flex-end;
-
   top: 0;
-  left: 8%;
+
+  &.leftTitle {
+    left: 8%;
+  }
+
+  &.rightTitle {
+    right: 4%;
+  }
+
   &:before {
     content: "";
     position: absolute;

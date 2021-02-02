@@ -8,6 +8,7 @@ import { HashLink } from "react-router-hash-link";
 import styles from "./AppSwiper.module.scss";
 // Images
 import image1 from "../../../../Images/SliderImage1.png";
+import image2 from "../../../../Images/dentist-office.jpg";
 
 const AppSwiper = () => {
   SwiperCore.use([Autoplay, Navigation]);
@@ -16,25 +17,29 @@ const AppSwiper = () => {
     <div className={"w-full my-6"}>
       <Swiper navigation loop>
         <SwiperSlide key={1}>
-          <SwiperItem1 />
+          <SwiperItem1 title1="Zahn-" title2="Bleaching" image={image1} />
         </SwiperSlide>
         <SwiperSlide key={2}>
-          <SwiperItem1 />
+          <SwiperItem1 title1="Zahn-" title2="Bleaching" image={image2} />
         </SwiperSlide>
       </Swiper>
     </div>
   );
 };
 
-const SwiperItem1 = () => (
+const SwiperItem1 = ({ image, title1, title2, rightTitle }) => (
   <div
     className={`relative grid grid-cols-9 ${styles.sliderImage}`}
-    style={{ backgroundImage: `url(${image1})` }}
+    style={{ backgroundImage: `url(${image})` }}
   >
-    <div className={`${styles.heroBackground}`}>
+    <div
+      className={`${styles.heroBackground} ${
+        rightTitle ? styles.rightTitle : styles.leftTitle
+      }`}
+    >
       <p className={styles.heroTitle}>
-        Zahn-
-        <br /> <strong>Bleaching</strong>
+        {title1}
+        <br /> <strong>{title2}</strong>
       </p>
     </div>
     <div
