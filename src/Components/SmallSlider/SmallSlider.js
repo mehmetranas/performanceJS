@@ -54,7 +54,7 @@ const swiperParams = {
   },
 };
 
-function SmallSlider({ items, callback }) {
+function SmallSlider({ items, callback = (f) => f }) {
   return (
     <>
       <div className="flex items-center justify-center relative">

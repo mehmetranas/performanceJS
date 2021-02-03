@@ -9,18 +9,26 @@ import styles from "./AppSwiper.module.scss";
 // Images
 import image1 from "../../../../Images/SliderImage1.png";
 import image2 from "../../../../Images/dentist-office.jpg";
+import image3 from "../../../../Images/dentist-office-women.jpg";
+import image4 from "../../../../Images/dentist-Orthodontics.jpg";
 
 const AppSwiper = () => {
   SwiperCore.use([Autoplay, Navigation]);
 
   return (
     <div className={"w-full my-6"}>
-      <Swiper navigation loop>
+      <Swiper navigation loop autoplay>
         <SwiperSlide key={1}>
           <SwiperItem1 title1="Zahn-" title2="Bleaching" image={image1} />
         </SwiperSlide>
         <SwiperSlide key={2}>
           <SwiperItem1 title1="Zahn-" title2="Implantate" image={image2} />
+        </SwiperSlide>
+        <SwiperSlide key={3}>
+          <SwiperItem1 title1="Zirkonium-" title2="Krone" image={image3} />
+        </SwiperSlide>
+        <SwiperSlide key={4}>
+          <SwiperItem1 title1="Kiefer-" title2="Orthopädie" image={image4} />
         </SwiperSlide>
       </Swiper>
     </div>

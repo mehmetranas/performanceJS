@@ -36,7 +36,6 @@ let StyledAntButtonLight = styled(Button)`
 
 function SectionBeratungInputs() {
   const [form] = Form.useForm();
-  const [formErrors, setFormErrors] = useState({});
 
   const selectBoxData = {
     treatments: [
@@ -49,17 +48,46 @@ function SectionBeratungInputs() {
   };
 
   const [progressSendEmail, setProgressSendEmail] = useState(false);
-  const openNotification = () => {
+  function openNotification({ message, description }) {
     notification.open({
-      placement: "bottomLeft",
-      message: "Thank You",
-      description: "We will response you as soon as possible.",
+      placement: "topRight",
+      message: message,
+      className: "my-class",
+      description: description,
       icon: <SmileOutlined style={{ color: "#108ee9" }} />,
     });
-  };
+  }
+
+  function sendEmail(formValue) {
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formValue,
+        process.env.REACT_APP_USER_ID
+      )
+      .finally(() => setProgressSendEmail(false))
+      .then(
+        (result) => {
+          console.log("success", result);
+          openNotification({
+            message: "Thank You",
+            description: "We will response you as soon as possible.",
+          });
+        },
+        (error) => {
+          console.log("failed", error);
+          openNotification({
+            message: "Sorry",
+            description: "An error occurred while sending your email",
+          });
+        }
+      );
+  }
 
   function onFinish(event) {
     setProgressSendEmail(true);
+    sendEmail(event);
   }
   function onFinishFailed(event) {
     const { values } = event;
@@ -67,7 +95,6 @@ function SectionBeratungInputs() {
   }
 
   function displayValidationMessages(values) {
-    console.log(values);
     const { name, email, phoneNumber, city, clinic, treatment } = values;
     if (!name) {
       message.warning("Please enter your name");
@@ -105,7 +132,7 @@ function SectionBeratungInputs() {
                 <Form.Item
                   noStyle
                   name="city"
-                  initialValue="1"
+                  initialValue="Istanbul"
                   rules={[{ required: true }]}
                 >
                   <StyledAntSelect
@@ -208,7 +235,7 @@ function SectionBeratungInputs() {
                     size="large"
                     bordered={false}
                     placeholder="Name, Nachname"
-                    className={`${styles.styledPlaceholder}`}
+                    className={`${styles.styledPlaceholder} capitalize`}
                   />
                 </Form.Item>
                 <div className={`${styles.columnWithRightBorder}`}></div>
