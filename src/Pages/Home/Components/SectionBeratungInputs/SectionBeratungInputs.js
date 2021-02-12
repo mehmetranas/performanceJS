@@ -7,6 +7,9 @@ import { SmileOutlined } from "@ant-design/icons";
 // Styles
 import styles from "./SectionBeratungInputs.module.scss";
 
+// providers
+import { useLanguageContext } from "../../../../languages-service/container/Langauge";
+
 // Sub Elements
 const { Option } = Select;
 
@@ -35,14 +38,15 @@ let StyledAntButtonLight = styled(Button)`
 `;
 
 function SectionBeratungInputs() {
+  const { dictionary } = useLanguageContext();
   const [form] = Form.useForm();
 
   const selectBoxData = {
     treatments: [
-      "Zahn-Bleaching",
-      "Zahn-Implantate",
-      "Kiefer-Orthopedie",
-      "Wurzelkanal-Behandlung",
+      dictionary?.treatments.item1,
+      dictionary?.treatments.item2,
+      dictionary?.treatments.item3,
+      dictionary?.treatments.item4,
     ],
     clinics: ["Vefadent Ümraniye"],
   };
@@ -69,17 +73,15 @@ function SectionBeratungInputs() {
       .finally(() => setProgressSendEmail(false))
       .then(
         (result) => {
-          console.log("success", result);
           openNotification({
-            message: "Thank You",
-            description: "We will response you as soon as possible.",
+            message: dictionary?.notification.thankYou,
+            description: dictionary?.notification.description1,
           });
         },
         (error) => {
-          console.log("failed", error);
           openNotification({
-            message: "Sorry",
-            description: "An error occurred while sending your email",
+            message: dictionary?.notification.sorry,
+            description: dictionary?.notification.descriptionError,
           });
         }
       );
@@ -97,22 +99,22 @@ function SectionBeratungInputs() {
   function displayValidationMessages(values) {
     const { name, email, phoneNumber, city, clinic, treatment } = values;
     if (!name) {
-      message.warning("Please enter your name");
+      message.warning(dictionary?.validationMessages.name);
     }
     if (!city) {
-      message.warning("Please select city");
+      message.warning(dictionary?.validationMessages.city);
     }
     if (!clinic) {
-      message.warning("Please select a clinic");
+      message.warning(dictionary?.validationMessages.clinic);
     }
     if (!treatment) {
-      message.warning("Please select a treatment");
+      message.warning(dictionary?.validationMessages.treatment);
     }
     if (!email) {
-      message.warning("Please enter your email");
+      message.warning(dictionary?.validationMessages.email);
     }
     if (!phoneNumber) {
-      message.warning("Please enter your phone");
+      message.warning(dictionary?.validationMessages.phoneNumber);
     }
   }
 
@@ -152,7 +154,9 @@ function SectionBeratungInputs() {
                   rules={[{ required: true }]}
                 >
                   <StyledAntSelect
-                    placeholder="Einheit auswählen"
+                    placeholder={
+                      dictionary?.sectionBeratungInput.treatmentPlaceholder
+                    }
                     size="large"
                     bordered={false}
                     style={{ width: "100%" }}
@@ -172,7 +176,9 @@ function SectionBeratungInputs() {
               <div className="col-span-1 hidden md:block p-4">
                 <Form.Item noStyle name="clinic" rules={[{ required: true }]}>
                   <StyledAntSelect
-                    placeholder="Klinik wählen"
+                    placeholder={
+                      dictionary?.sectionBeratungInput.clinicPlaceholder
+                    }
                     size="large"
                     bordered={false}
                     style={{ width: "100%" }}
@@ -192,7 +198,9 @@ function SectionBeratungInputs() {
             <div className={`md:hidden col-span-1 p-4 ${styles.shadowBox}`}>
               <Form.Item noStyle name="clinic" rules={[{ required: true }]}>
                 <StyledAntSelect
-                  placeholder="Klinik wählen"
+                  placeholder={
+                    dictionary?.sectionBeratungInput.clinicPlaceholder
+                  }
                   size="large"
                   bordered={false}
                   style={{ width: "100%" }}
@@ -213,7 +221,7 @@ function SectionBeratungInputs() {
                 block
                 onClick={() => window.tidioChatApi.open()}
               >
-                Online Beratung
+                {dictionary?.appShared.onlineReservation}
               </StyledAntButtonLight>
             </div>
           </div>
@@ -228,13 +236,18 @@ function SectionBeratungInputs() {
                   noStyle
                   name="name"
                   rules={[
-                    { required: true, message: "Please input your username!" },
+                    {
+                      required: true,
+                      message: dictionary?.validationMessages.name,
+                    },
                   ]}
                 >
                   <Input
                     size="large"
                     bordered={false}
-                    placeholder="Name, Nachname"
+                    placeholder={
+                      dictionary?.sectionBeratungInput.namePlaceholder
+                    }
                     className={`${styles.styledPlaceholder} capitalize`}
                   />
                 </Form.Item>
@@ -249,14 +262,16 @@ function SectionBeratungInputs() {
                   rules={[
                     {
                       required: true,
-                      message: "Please input a phone number!",
+                      message: dictionary?.validationMessages.phoneNumber,
                     },
                   ]}
                 >
                   <Input
                     size="large"
                     bordered={false}
-                    placeholder="Telefon"
+                    placeholder={
+                      dictionary?.sectionBeratungInput.phonePlaceholder
+                    }
                     className={`${styles.styledPlaceholder}`}
                   />
                 </Form.Item>
@@ -268,7 +283,7 @@ function SectionBeratungInputs() {
                   rules={[
                     {
                       required: true,
-                      message: "Please input an email!",
+                      message: dictionary?.validationMessages.email,
                     },
                   ]}
                 >
@@ -290,7 +305,7 @@ function SectionBeratungInputs() {
                 rules={[
                   {
                     type: "email",
-                    message: "Please input an email!",
+                    message: dictionary?.validationMessages.email,
                   },
                 ]}
               >
@@ -310,7 +325,7 @@ function SectionBeratungInputs() {
                   className={`h-full w-full border-none`}
                   loading={progressSendEmail}
                 >
-                  Absenden
+                  {dictionary?.appShared.submit}
                 </StyledAntButton>
               </Form.Item>
             </div>

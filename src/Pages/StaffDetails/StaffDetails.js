@@ -12,7 +12,11 @@ import { ScrollToTop } from "../../Utility/ScrollTop";
 // Data
 import { Staff } from "../../Data/data";
 
+//providers
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 function StaffDetails({ match }) {
+  const { dictionary } = useLanguageContext();
   const { id } = useParams();
   const [staff, setStaff] = useState();
 
@@ -28,8 +32,8 @@ function StaffDetails({ match }) {
         <div className="md:col-span-8 md:col-start-3 col-span-full flex flex-col items-center justify-center">
           <div className="md:w-1/3 w-2/3">
             <SectionTitle
-              title="Unsere Ärzte"
-              subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
+              title={dictionary?.staffDetails.sectionTitle}
+              subTitle={dictionary?.staffDetails.sectionSubtitle}
             />
           </div>
           <div className="w-4/5 flex flex-col gap-10 md:mt-0 mt-6">
@@ -42,7 +46,7 @@ function StaffDetails({ match }) {
                 icon={<LeftOutlined />}
                 className="app-btn rounded flex items-center justify-center w-full md:w-auto "
               >
-                Alle Ärzte/innen
+                {dictionary?.staffDetails.backButton}
               </Button>
             </div>
           </div>

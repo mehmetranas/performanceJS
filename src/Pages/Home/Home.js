@@ -18,7 +18,11 @@ import {
   AboutUs,
 } from "../../Components";
 
+// providers
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 function Home() {
+  const { dictionary } = useLanguageContext();
   const { id } = useParams();
 
   const scrollToSection = (id) => {
@@ -65,8 +69,8 @@ function Home() {
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4 md:mt-20 mt-10 md:col-start-4">
               <SectionTitle
-                title="Unsere Behandlungen"
-                subTitle="Gesunde Zähne und ein strahlend weißes Lächeln"
+                title={dictionary?.home.behandlung.title}
+                subTitle={dictionary?.home.behandlung.subTitle}
               />
             </div>
             <div className="col-span-10 md:mt-5">
@@ -82,8 +86,8 @@ function Home() {
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4 md:mt-20 md:col-start-4">
               <SectionTitle
-                title="Ihre Gesundheitsreise"
-                subTitle="Urlaub machen für gesündere Zähne"
+                title={dictionary?.home.healthRoute.title}
+                subTitle={dictionary?.home.healthRoute.subTitle}
               />
             </div>
             <div className="col-span-10 md:mt-20 mt-5">
@@ -104,8 +108,8 @@ function Home() {
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
               <SectionTitle
-                title="Unsere Ärzte"
-                subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
+                title={dictionary?.home.staff.title}
+                subTitle={dictionary?.home.staff.subTitle}
               />
             </div>
             <div className="col-span-10 md:mt-5">
@@ -121,8 +125,8 @@ function Home() {
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4 mt-20 md:col-start-4">
               <SectionTitle
-                title="über uns"
-                subTitle="Ein kompetentes Team, was Ihre Wünsche erfüllt"
+                title={dictionary?.home.aboutUs.title}
+                subTitle={dictionary?.home.aboutUs.subTitle}
               />
             </div>
             <div className="col-span-10 md:mt-5">
@@ -138,8 +142,8 @@ function Home() {
           <div className="grid grid-cols-10">
             <div className="col-span-8 col-start-2 md:col-span-4  md:mt-20 md:col-start-4">
               <SectionTitle
-                title="Unsere Kliniken"
-                subTitle="Modernste klinische Ausstattung mit professionellem Team"
+                title={dictionary?.home.clinics.title}
+                subTitle={dictionary?.home.clinics.subTitle}
               />
             </div>
             <div className="col-span-10 md:mt-5">

@@ -4,7 +4,11 @@ import { HashLink } from "react-router-hash-link";
 // Styles
 import styles from "./Footer.module.scss";
 
+// provider
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 function FooterSection1() {
+  const { dictionary } = useLanguageContext();
   return (
     <>
       <div>
@@ -16,19 +20,19 @@ function FooterSection1() {
         </p>
         <p className={styles.text}>
           <HashLink smooth to="/#uber">
-            Über Uns
+            {dictionary?.appShared.aboutUs}
           </HashLink>
         </p>
         <p className={styles.text}>
           <HashLink smooth to="/#staff">
-            Unsere Ärzte
+            {dictionary?.appShared.staff}
           </HashLink>
         </p>
         <p className={styles.text}>
-          <a href="#">Unsere Kliniken</a>
+          <a href="#">{dictionary?.appShared.ourClinics}</a>
         </p>
         <p className={styles.text}>
-          <a href="#">Online Beratung</a>
+          <a href="#">{dictionary?.appShared.onlineReservation}</a>
         </p>
       </div>
     </>

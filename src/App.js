@@ -10,6 +10,9 @@ import {
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
+// Language Service
+import { LanguageProvider } from "./languages-service/container/Langauge";
+
 //Components
 import { Header, Footer } from "./Components";
 import { Home, StaffDetails } from "./Pages";
@@ -28,32 +31,34 @@ function App() {
 
   return (
     <>
-      <div className="grid grid-cols-12">
-        <div className="col-span-12">
-          <Router history={browserHistory}>
-            <Layout className="layout bg-white">
-              <Layout.Header
-                className="bg-transparent sticky bg-white py-2 w-full left-0 z-50 top-0 flex justify-center px-0"
-                style={{ height: calculateHeaderHeightByScreenWidth() }}
-              >
-                <Header />
-              </Layout.Header>
+      <LanguageProvider>
+        <div className="grid grid-cols-12">
+          <div className="col-span-12">
+            <Router history={browserHistory}>
+              <Layout className="layout bg-white">
+                <Layout.Header
+                  className="bg-transparent sticky bg-white py-2 w-full left-0 z-50 top-0 flex justify-center px-0"
+                  style={{ height: calculateHeaderHeightByScreenWidth() }}
+                >
+                  <Header />
+                </Layout.Header>
 
-              <Layout.Content>
-                <div className="site-layout-content pb-5">
-                  <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/staff/:id" component={StaffDetails} />
-                  </Switch>
-                </div>
-              </Layout.Content>
-              <Layout.Footer className="bg-primary-1">
-                <Footer />
-              </Layout.Footer>
-            </Layout>
-          </Router>
+                <Layout.Content>
+                  <div className="site-layout-content pb-5">
+                    <Switch>
+                      <Route exact path="/" component={Home} />
+                      <Route exact path="/staff/:id" component={StaffDetails} />
+                    </Switch>
+                  </div>
+                </Layout.Content>
+                <Layout.Footer className="bg-primary-1">
+                  <Footer />
+                </Layout.Footer>
+              </Layout>
+            </Router>
+          </div>
         </div>
-      </div>
+      </LanguageProvider>
     </>
   );
 }

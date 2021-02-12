@@ -6,7 +6,11 @@ import styles from "./AboutUs.module.scss";
 // images
 import image3 from "../../Images/dentist-job3.png";
 
+// provider
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 function AboutUs() {
+  const { dictionary } = useLanguageContext();
   return (
     <>
       <div className="text-primary-1">
@@ -17,19 +21,13 @@ function AboutUs() {
           </div>
           <div className="divide-dashed divide-primary-0 divide-y-2 flex flex-col items-start justify-center pl-3 space-y-5 text">
             <p className={`${styles.description} w-full md:w-1/3`}>
-              Unsere spezialisierten Ärzte als auch kompetenten MitarbeiterInnen
-              legen großen Wert auf die individuelle, vertrauensvolle und
-              bestmögliche Behandlung der Patienten.
+              {dictionary?.aboutUs.description1}
             </p>
             <p className={`${styles.description} w-full md:w-1/3`}>
-              Seit 1992 bieten unsere Vefadent- Polikliniken umfassende und
-              erstklassige Leistungen für Ihre Zahngesundheit nach europäischen
-              Standarts an.
+              {dictionary?.aboutUs.description2}
             </p>
             <p className={`${styles.description} w-full md:w-1/3`}>
-              Durch einer innovativen Praxisausstattung und modernster Technik
-              können wir unsere Patienten effizient betreuen und ermöglichen
-              Ihnen eine Wohlfühlatmosphäre.
+              {dictionary?.aboutUs.description3}
             </p>
           </div>
         </div>

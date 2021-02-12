@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import { Button, Select, Grid } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
@@ -13,36 +13,42 @@ import styles from "./Header.module.scss";
 // Images
 import logo from "../../Images/Logo_dark.svg";
 
-const HeaderItems = [
-  <HashLink smooth to="/#home">
-    Home
-  </HashLink>,
-  <HashLink smooth to="/#uberuns">
-    Über Uns
-  </HashLink>,
-  <HashLink smooth to="/#staff">
-    Unsere Ärzte
-  </HashLink>,
-  <HashLink smooth to="/#behandlungen">
-    Behandlungen
-  </HashLink>,
-  <HashLink smooth to="/#contact">
-    Kontakt
-  </HashLink>,
-];
+// provider
+import { useLanguageContext } from "../../languages-service/container/Langauge";
 
 const OnlineBeratungButton = (props) => (
   <Button {...props} onClick={() => window.tidioChatApi.open()}>
-    Online Beratung
+    {props.title}
   </Button>
 );
 
 const LanguageSelectButton = (props) => <LanguageSelectBox {...props} />;
 
 function Header() {
+  const { dictionary } = useLanguageContext();
   const screens = Grid.useBreakpoint();
 
   const headerRef = useRef();
+
+  const HeaderItems = useMemo(() => {
+    return [
+      <HashLink smooth to="/#home">
+        {dictionary?.appShared.home}
+      </HashLink>,
+      <HashLink smooth to="/#uberuns">
+        {dictionary?.appShared.aboutUs}
+      </HashLink>,
+      <HashLink smooth to="/#staff">
+        {dictionary?.appShared.staff}
+      </HashLink>,
+      <HashLink smooth to="/#behandlungen">
+        {dictionary?.appShared.treatments}
+      </HashLink>,
+      <HashLink smooth to="/#contact">
+        {dictionary?.appShared.contact}
+      </HashLink>,
+    ];
+  }, []);
 
   const toggleHeader = () => {
     headerRef.current.style.display =
@@ -79,6 +85,7 @@ function Header() {
             </div>
             <div className={`${styles.navbarActionsMediumScreen}`}>
               <OnlineBeratungButton
+                title={dictionary?.appShared.onlineReservation}
                 className={`${styles.beratung} app-btn app-btn-primary`}
                 size={screens.xs ? "small" : "large"}
               />

@@ -1,0 +1,138 @@
+{
+  "appShared": {
+    "onlineReservation": "",
+    "aboutUs": "",
+    "staff": "",
+    "ourClinics": "",
+    "home": "",
+    "treatments": "",
+    "service1": "",
+    "service2": "",
+    "service3": "",
+    "service4": "",
+    "service5": "",
+    "contact": ""
+  },
+  "aboutUs": {
+    "description1": "",
+    "description2": "",
+    "description3": ""
+  },
+  "addressContent": {
+    "whatsUpButton": "",
+    "telActionButton": "",
+    "routeActionButton": ""
+  },
+  "healthRoute": {
+    "desc1Title1": "",
+    "desc1Title2": "",
+    "desc1Text": "",
+    "desc2Title1": "",
+    "desc2Title2": "",
+    "desc2Text": "",
+    "desc3Title1": "",
+    "desc3Title2": "",
+    "desc3Text": "",
+    "desc4Title1": "",
+    "desc4Title2": "",
+    "desc4Text": "",
+    "desc5Title1": "",
+    "desc5Title2": "",
+    "desc5Text": "",
+    "desc6Title1": "",
+    "desc6Title2": "",
+    "desc6Text": "",
+    "moreLoad": ""
+  },
+  "appSwiper": {
+    "item1": {
+      "title1": "",
+      "title2": ""
+    },
+    "item2": {
+      "title1": "",
+      "title2": ""
+    },
+    "item3": {
+      "title1": "",
+      "title2": ""
+    },
+    "item4": {
+      "title1": "",
+      "title2": ""
+    },
+    "ctaButton": ""
+  },
+  "treatments": {
+    "item1": "",
+    "item2": "",
+    "item3": "",
+    "item4": ""
+  },
+  "notification": {
+    "thankYou": "Thank You",
+    "descriptionSuccess": "We will response you as soon as possible.",
+    "sorry:": "Sorry",
+    "descriptionError": "An error occurred while sending your email"
+  },
+  "validationMessages": {
+    "name": "Please enter your name",
+    "city": "Please select city",
+    "clinic": "Please select a clinic",
+    "treatment": "Please select a treatment",
+    "email": "Please enter your email",
+    "phoneNumber": "Please enter your phone"
+  },
+  "sectionBeratungInput": {
+    "treatmentPlaceholder": "",
+    "clinicPlaceholder": "",
+    "namePlaceholder": "",
+    "phonePlaceholder": ""
+  },
+  "sectionBeratungSelect": {
+    "treatmentPlaceholder": "",
+    "clinicPlaceholder": "",
+    "namePlaceholder": "",
+    "phonePlaceholder": ""
+  },
+  "sectionBeratungText": "",
+  "home": {
+    "behandlung": {
+      "title": "",
+      "subTitle": ""
+    },
+    "healthRoute": {
+      "title": "",
+      "subTitle": ""
+    },
+    "staff": {
+      "title": "",
+      "subTitle": ""
+    },
+    "aboutUs": {
+      "title": "",
+      "subTitle": ""
+    },
+    "clinics": {
+      "title": "",
+      "subTitle": ""
+    },
+    "personInformation1": {
+      "title": "",
+      "subTitle": ""
+    },
+    "personInformation2": {
+      "title": "",
+      "subTitle": ""
+    },
+    "personInformation3": {
+      "title": "",
+      "subTitle": ""
+    },
+    "staffDetails": {
+      "backButton": "",
+      "sectiontitle": "",
+      "sectionSubtitle": ""
+    }
+  }
+}

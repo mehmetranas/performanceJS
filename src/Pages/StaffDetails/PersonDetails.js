@@ -2,7 +2,11 @@ import React from "react";
 import { Button, Divider } from "antd";
 import { GlobalOutlined, PhoneOutlined, MailOutlined } from "@ant-design/icons";
 
+// provider
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 function PersonDetails({ staff }) {
+  const { dictionary } = useLanguageContext();
   return (
     <>
       <div className="grid grid-rows-auto md:grid-rows-3 md:grid-flow-col gap-4">
@@ -45,7 +49,7 @@ function PersonDetails({ staff }) {
             className="ant-btn app-btn rounded"
             block
           >
-            Online Beratung
+            {dictionary?.appShared.onlineReservation}
           </Button>
         </div>
       </div>

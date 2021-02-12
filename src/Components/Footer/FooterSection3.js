@@ -6,11 +6,15 @@ import { SocialIcons } from "../index";
 // Styles
 import styles from "./Footer.module.scss";
 
+// provider
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 function FooterSection3() {
+  const { dictionary } = useLanguageContext();
   return (
     <>
       <div>
-        <p className={styles.title}>Kontakt</p>
+        <p className={styles.title}>{dictionary?.appShared.contact}</p>
         <p className={styles.text}>
           <strong>ATAKENT</strong>
           <br />
@@ -28,7 +32,7 @@ function FooterSection3() {
           <br />
           <span>info@globallydent.com</span>
         </p>
-        <p className={styles.text}>Online Beratung</p>
+        <p className={styles.text}>{dictionary?.appShared.onlineReservation}</p>
         <SocialIcons />
       </div>
     </>

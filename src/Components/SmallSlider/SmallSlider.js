@@ -7,9 +7,6 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import styles from "./SmallSlider.module.scss";
 
 // Components
-import { UnsereBehandlungenItem } from "../index";
-
-import SwiperCore, { Controller } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const StyledSwiper = styled(Swiper)`

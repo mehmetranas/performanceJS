@@ -3,6 +3,8 @@ import { Button } from "antd";
 import Icon, { WhatsAppOutlined } from "@ant-design/icons";
 // Styles
 import styles from "./CliniquesLocationMap.module.scss";
+// providers
+import { useLanguageContext } from "../../languages-service/container/Langauge";
 
 const PhoneSvg = () => (
   <svg
@@ -103,6 +105,7 @@ const PhoneIcon = (props) => <Icon component={PhoneSvg} {...props} />;
 const RoutePlanIcon = (props) => <Icon component={RoutePlanSvg} {...props} />;
 
 function AddressContent({ town, description }) {
+  const { dictionary } = useLanguageContext();
   return (
     <>
       <div
@@ -128,7 +131,9 @@ function AddressContent({ town, description }) {
               />
             }
           >
-            <span className="md:hidden text-white">Über Whatsapp</span>
+            <span className="md:hidden text-white">
+              {dictionary?.addressContent.whatsUpButton}
+            </span>
           </Button>
           <Button
             size="large"
@@ -136,7 +141,7 @@ function AddressContent({ town, description }) {
             className="ant-btn ant-btn-lg app-btn flex h-14 items-center justify-center m-0 py-0 px-2"
             icon={<PhoneIcon />}
           >
-            Jetzt Anrufen
+            {dictionary?.addressContent.telActionButton}
           </Button>
           <Button
             size="large"
@@ -145,7 +150,7 @@ function AddressContent({ town, description }) {
             icon={<RoutePlanIcon />}
             className="ant-btn ant-btn-lg app-btn flex h-14 items-center justify-center m-0 py-0 px-2"
           >
-            Route Planen
+            {dictionary?.addressContent.routeActionButton}
           </Button>
         </div>
       </div>

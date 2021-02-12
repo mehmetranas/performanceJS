@@ -1,0 +1,139 @@
+{
+  "appShared": {
+    "onlineReservation": "Online Beratung",
+    "aboutUs": "Über Uns",
+    "staff": "Unsere Ärzte",
+    "ourClinics": "Unsere Kliniken",
+    "home": "Home",
+    "treatments": "Behandlungen",
+    "service1": "Zahnbleaching",
+    "service2": "Zahnimplantate",
+    "service3": "Kieferorthopädie",
+    "service4": "Wurzelkanalbehandlung",
+    "service5": "Und vieles mehr...",
+    "contact": "Kontakt",
+    "submit": "Absenden"
+  },
+  "aboutUs": {
+    "description1": "Unsere spezialisierten Ärzte als auch kompetenten MitarbeiterInnen legen großen Wert auf die individuelle, vertrauensvolle und bestmögliche Behandlung der Patienten.",
+    "description2": "Seit 1992 bieten unsere Vefadent- Polikliniken umfassende und erstklassige Leistungen für Ihre Zahngesundheit nach europäischen Standarts an.",
+    "description3": "Durch einer innovativen Praxisausstattung und modernster Technik können wir unsere Patienten effizient betreuen und ermöglichen Ihnen eine Wohlfühlatmosphäre."
+  },
+  "addressContent": {
+    "whatsUpButton": "Über Whatsapp",
+    "telActionButton": "Jetzt Anrufen",
+    "routeActionButton": "Route Planen"
+  },
+  "healthRoute": {
+    "desc1Title1": "Vorort-",
+    "desc1Title2": "Beratung",
+    "desc1Text": "Lassen Sie sich in deutschen Partnerkliniken von den Ärzten Vorort beraten lassen. Somit kalkulieren wir die Kosten Ihrer Behandlung.",
+    "desc2Title1": "Termin",
+    "desc2Title2": "Vereinbarung",
+    "desc2Text": "Nach der Beratung vereinbaren wir einen passenden Termin mit Ihnen für Ihre perfekte Gesundheitsreise.",
+    "desc3Title1": "Online",
+    "desc3Title2": "Beratung",
+    "desc3Text": "Oder lassen Sie sich online von unseren Ärzten beraten. Somit kalkulieren wir die Kosten Ihrer Behandlung.",
+    "desc4Title1": "Transfer",
+    "desc4Title2": "Planung",
+    "desc4Text": "Wir planen den Transfer von den Flughäfen Ihrer Wahl bis in unsere Klinik.",
+    "desc5Title1": "Zufriedenheit",
+    "desc5Title2": "garantiert",
+    "desc5Text": "Unsere Klinik hat über 9000 zufriedene Patienten. Also worauf warten Sie noch. Starten Sie Ihre Gesundheitsreise mit Vefadent; Ihrem Vertrauenspartner.",
+    "desc6Title1": "Professionelle",
+    "desc6Title2": "Behandlung",
+    "desc6Text": "Lassen Sie sich unbesorgt von unseren erfahrenen Ärzten behandeln.",
+    "moreLoad": "Weitere Schritte ansehen"
+  },
+  "appSwiper": {
+    "item1": {
+      "title1": "Zahn-",
+      "title2": "Bleaching"
+    },
+    "item2": {
+      "title1": "Zahn-",
+      "title2": "Implantate"
+    },
+    "item3": {
+      "title1": "Zirkonium-",
+      "title2": "Krone"
+    },
+    "item4": {
+      "title1": "Kiefer-",
+      "title2": "Orthopädie"
+    },
+    "ctaButton": "Erfahren Sie Mehr"
+  },
+  "treatments": {
+    "item1": "Zahn-Bleaching",
+    "item2": "Zahn-Implantate",
+    "item3": "Kiefer-Orthopedie",
+    "item4": "Wurzelkanal-Behandlung"
+  },
+  "notification": {
+    "thankYou": "Thank You",
+    "descriptionSuccess": "We will response you as soon as possible.",
+    "sorry:": "Sorry",
+    "descriptionError": "An error occurred while sending your email"
+  },
+  "validationMessages": {
+    "name": "Please enter your name",
+    "city": "Please select city",
+    "clinic": "Please select a clinic",
+    "treatment": "Please select a treatment",
+    "email": "Please enter your email",
+    "phoneNumber": "Please enter your phone"
+  },
+  "sectionBeratungInput": {
+    "treatmentPlaceholder": "Einheit auswählen",
+    "clinicPlaceholder": "Klinik wählen",
+    "namePlaceholder": "Name, Nachname",
+    "phonePlaceholder": "Telefon"
+  },
+  "sectionBeratungSelect": {
+    "treatmentPlaceholder": "Einheit auswählen",
+    "clinicPlaceholder": "Klinik wählen",
+    "namePlaceholder": "Name, Nachname",
+    "phonePlaceholder": "Telefon"
+  },
+  "sectionBeratungText": "Jetzt einen Termin vereinbaren.",
+  "home": {
+    "behandlung": {
+      "title": "Unsere Behandlungen",
+      "subTitle": "Gesunde Zähne und ein strahlend weißes Lächeln"
+    },
+    "healthRoute": {
+      "title": "Ihre Gesundheitsreise",
+      "subTitle": "Urlaub machen für gesündere Zähne"
+    },
+    "staff": {
+      "title": "Unsere Ärzte",
+      "subTitle": "Ein kompetentes Team, was Ihre Wünsche erfüllt"
+    },
+    "aboutUs": {
+      "title": "über uns",
+      "subTitle": "Ein kompetentes Team, was Ihre Wünsche erfüllt"
+    },
+    "clinics": {
+      "title": "Unsere Kliniken",
+      "subTitle": "Modernste klinische Ausstattung mit professionellem Team"
+    },
+    "personInformation1": {
+      "title": "Bildung",
+      "subTitle": "Akademische Ausbildung"
+    },
+    "personInformation2": {
+      "title": "Erfahrung",
+      "subTitle": "Berufliche Erfahrungen"
+    },
+    "personInformation3": {
+      "title": "Sonstiges",
+      "subTitle": "Weitere Informationen"
+    },
+    "staffDetails": {
+      "backButton": "Alle Ärzte/innen",
+      "sectiontitle": "Unsere Ärzte",
+      "sectionSubtitle": "Ein kompetentes Team, was Ihre Wünsche erfüllt"
+    }
+  }
+}

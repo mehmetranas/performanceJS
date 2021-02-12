@@ -7,6 +7,9 @@ import { Select, Button } from "antd";
 // Styles
 import styles from "./SectionBeratungSelects.module.scss";
 
+// providers
+import { useLanguageContext } from "../../../../languages-service/container/Langauge";
+
 const { Option } = Select;
 
 let StyledAntSelect = styled(Select)`
@@ -25,12 +28,13 @@ let StyledAntButton = styled(Button)`
 `;
 
 function SectionBeratungSelects() {
+  const { dictionary } = useLanguageContext();
   const selectBoxData = {
     treatments: [
-      "Zahn-Bleaching",
-      "Zahn-Implantate",
-      "Kiefer-Orthopedie",
-      "Wurzelkanal-Behandlung",
+      dictionary?.treatments.item1,
+      dictionary?.treatments.item2,
+      dictionary?.treatments.item3,
+      dictionary?.treatments.item4,
     ],
     clinics: ["Vefadent Ümraniye"],
   };
@@ -53,7 +57,9 @@ function SectionBeratungSelects() {
             </div>
             <div className={`col-span-1 p-4 relative`}>
               <StyledAntSelect
-                placeholder="Einheit auswählen"
+                placeholder={
+                  dictionary?.SectionBeratungSelect.treatmentPlaceholder
+                }
                 size="large"
                 bordered={false}
                 style={{ width: "100%" }}
@@ -71,7 +77,9 @@ function SectionBeratungSelects() {
             </div>
             <div className="col-span-1 hidden md:block p-4">
               <StyledAntSelect
-                placeholder="Klinik wählen"
+                placeholder={
+                  dictionary?.SectionBeratungSelect.clinicPlaceholder
+                }
                 size="large"
                 bordered={false}
                 style={{ width: "100%" }}
@@ -89,7 +97,7 @@ function SectionBeratungSelects() {
         <div className="md:col-span-2 row-span-1 md:px-4 grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-0">
           <div className={`md:hidden col-span-1 p-4 ${styles.shadowBox}`}>
             <StyledAntSelect
-              placeholder="Klinik wählen"
+              placeholder={dictionary?.SectionBeratungSelect.clinicPlaceholder}
               size="large"
               bordered={false}
               style={{ width: "100%" }}
@@ -109,7 +117,7 @@ function SectionBeratungSelects() {
               block
               onClick={() => window.tidioChatApi.open()}
             >
-              Online Beratung
+              {dictionary?.appShared.onlineReservation}
             </StyledAntButton>
           </div>
         </div>

@@ -17,6 +17,9 @@ import transfer from "../../Images/Reise_Plan.svg";
 import zufriedenheit from "../../Images/Zufriedenheit.svg";
 import behandlung from "../../Images/Behandlung.svg";
 
+// provider
+import { useLanguageContext } from "../../languages-service/container/Langauge";
+
 let StyledAntButton = styled(Button)`
   background: #36a0fc 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 20px #3f8cd15a;
@@ -27,24 +30,25 @@ let StyledAntButton = styled(Button)`
 `;
 
 function HealthRouteSmall() {
+  const { dictionary } = useLanguageContext();
   const [hideItems, setHideItems] = useState(true);
   return (
     <div className="flex flex-col gap-6">
       <div>
         <HealthRouteSmallItem
           image={vorortBeratung}
-          title1="Vorort-"
-          title2="Beratung"
-          text="Lassen Sie sich in deutschen Partnerkliniken von den Ärzten Vorort beraten lassen. Somit kalkulieren wir die Kosten Ihrer Behandlung."
+          title1={dictionary?.healthRoute.desc1Title1}
+          title2={dictionary?.healthRoute.desc1Title1}
+          text={dictionary?.healthRoute.desc1Text}
         />
       </div>
       <DashedDivider />
       <div>
         <HealthRouteSmallItem
           image={onlineBeratung}
-          title1="Online"
-          title2="Beratung"
-          text="Oder lassen Sie sich online von unseren Ärzten beraten. Somit kalkulieren wir die Kosten Ihrer Behandlung."
+          title1={dictionary?.healthRoute.desc2Title1}
+          title2={dictionary?.healthRoute.desc2Title1}
+          text={dictionary?.healthRoute.desc2Text}
         />
       </div>
       <DashedDivider />
@@ -56,36 +60,36 @@ function HealthRouteSmall() {
         <div>
           <HealthRouteSmallItem
             image={termin}
-            title1="Termin"
-            title2="Vereinbaring"
-            text="Lassen Sie sich in deutschen Partnerkliniken von den Ärzten Vorort beraten lassen. Somit kalkulieren wir die Kosten Ihrer Behandlung."
+            title1={dictionary?.healthRoute.desc3Title1}
+            title2={dictionary?.healthRoute.desc3Title1}
+            text={dictionary?.healthRoute.desc3Text}
           />
         </div>
         <DashedDivider />
         <div>
           <HealthRouteSmallItem
             image={transfer}
-            title1="Transfer"
-            title2="Planung"
-            text="Wir planen den Transfer von den Flughäfen Ihrer Wahl bis in unsere Klinik."
+            title1={dictionary?.healthRoute.desc4Title1}
+            title2={dictionary?.healthRoute.desc4Title1}
+            text={dictionary?.healthRoute.desc4Text}
           />
         </div>
         <DashedDivider />
         <div>
           <HealthRouteSmallItem
             image={zufriedenheit}
-            title1="Zufriedenheit"
-            title2="garantiert"
-            text="Unsere Klinik hat über 9000 zufriedene Patienten. Also worauf warten Sie noch. Starten Sie Ihre Gesundheitsreise mit Vefadent; Ihrem Vertrauenspartner."
+            title1={dictionary?.healthRoute.desc5Title1}
+            title2={dictionary?.healthRoute.desc5Title1}
+            text={dictionary?.healthRoute.desc5Text}
           />
         </div>
         <DashedDivider />
         <div>
           <HealthRouteSmallItem
             image={behandlung}
-            title1="Professionelle"
-            title2="Behandlung"
-            text="Lassen Sie sich unbesorgt von unseren erfahrenen Ärzten behandeln."
+            title1={dictionary?.healthRoute.desc6Title1}
+            title2={dictionary?.healthRoute.desc6Title1}
+            text={dictionary?.healthRoute.desc6Text}
           />
         </div>
       </div>
@@ -95,7 +99,7 @@ function HealthRouteSmall() {
           className={`h-full w-full border-none`}
           onClick={() => setHideItems((prev) => !prev)}
         >
-          Weitere Schritte ansehen
+          {dictionary?.healthRoute.moreLoad}
         </StyledAntButton>
       </div>
     </div>
